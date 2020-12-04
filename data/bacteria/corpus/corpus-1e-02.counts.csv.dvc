@@ -1,0 +1,10 @@
+cmd: echo "count,pfam_id" > corpus-1e-02.counts.csv; cat corpus-1e-02.txt | tr " "
+  "\n" | sort | uniq -c | sort -nr | sed "s/ PF/,PF/g" | tr -d " " >> corpus-1e-02.counts.csv
+deps:
+- md5: 06e3ec71ecf2cd2ef9b1de74e0d08b4d
+  path: corpus-1e-02.txt
+md5: 91f03cf7963fce450b5288cb381b993b
+outs:
+- cache: true
+  md5: 9ca37778c4b601b02bdbbd9c936c75fe
+  path: corpus-1e-02.counts.csv

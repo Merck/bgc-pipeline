@@ -1,0 +1,5 @@
+md5: 1996159c454297ca73a02ab859065611
+outs:
+- cache: true
+  md5: 27a38c1547fb22d9ba79d1eb48380dc9.dir
+  path: hmm_geneborder

@@ -1,0 +1,13 @@
+cmd: python ../../../bgc_detection/evaluation/labelled_bootstrap_split.py -i ../../clusterfinder/labelled/CF_labelled_contigs_domains.csv
+  --summary ../../clusterfinder/labelled/CF_labelled_contig_summary.csv --number 100
+  --train-ratio 0.2 -o splits
+deps:
+- md5: e3feba3e2d851efcf05d61815eb4045b
+  path: ../../clusterfinder/labelled/CF_labelled_contig_summary.csv
+- md5: 1e941025645e1f81fa2390f427ea7e9a
+  path: ../../clusterfinder/labelled/CF_labelled_contigs_domains.csv
+md5: 88bacf6a853990e20d9c0f7857440ef4
+outs:
+- cache: true
+  md5: a1a2bcb0014deed6d4dc659ac4a7dde0.dir
+  path: splits

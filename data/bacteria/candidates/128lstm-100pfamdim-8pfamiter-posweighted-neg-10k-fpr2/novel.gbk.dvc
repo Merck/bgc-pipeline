@@ -1,0 +1,11 @@
+cmd: python ../../../../bgc_detection/candidates/candidate_genbank.py -i novel.csv
+  -b ../../genbank -o novel.gbk
+deps:
+- md5: c501a9d66dad7ff3aec15ee9a3b8c4ab
+  path: novel.csv
+- md5: c5976ebd0831460374d888863d3e5e65.dir
+  path: ../../genbank
+outs:
+- cache: true
+  md5: 147902ecdc055e50a7153cd51e682954
+  path: novel.gbk

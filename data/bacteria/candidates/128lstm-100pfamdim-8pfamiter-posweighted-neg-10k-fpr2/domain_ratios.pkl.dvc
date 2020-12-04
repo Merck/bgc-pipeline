@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/similarity/domain_set_vectors.py -i domains.csv
+  -o domain_ratios.pkl --ratios
+deps:
+- md5: eb82e1ea651dd0fdc764b49bdff980b4
+  path: domains.csv
+md5: e2759103a2bc09c3a7df42fbf83aaf97
+outs:
+- cache: true
+  md5: 770d05105acfac8255e2b504d41d0bb3
+  path: domain_ratios.pkl

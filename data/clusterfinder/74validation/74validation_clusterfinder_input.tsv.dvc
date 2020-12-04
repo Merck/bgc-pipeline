@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/preprocessing/domtbl2clusterfinder.py -i 74validation_domtbl.pfam27.tbl
+  -o 74validation_clusterfinder_input.tsv
+deps:
+- md5: c73f3b1761a3a7cecf6f3690e33b38e6
+  path: 74validation_domtbl.pfam27.tbl
+md5: b8eba876a05dc277078c66a8a903f8b9
+outs:
+- cache: true
+  md5: 7e3fc160f47c89be6fe719d17693228b
+  path: 74validation_clusterfinder_input.tsv

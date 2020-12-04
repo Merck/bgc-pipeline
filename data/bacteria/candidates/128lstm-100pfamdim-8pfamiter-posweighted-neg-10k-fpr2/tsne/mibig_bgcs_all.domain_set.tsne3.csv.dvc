@@ -1,0 +1,13 @@
+cmd: python ../../../../../bgc_detection/similarity/dim_reduction_matrix.py -i ../../../../training/positive/mibig_bgcs_all.domain_set.pkl
+  -i ../domain_set.pkl -o mibig_bgcs_all.domain_set.tsne3.csv --metric cosine --num-components
+  3
+deps:
+- md5: ef29975903fb3faa4f2d48931c996100
+  path: ../../../../training/positive/mibig_bgcs_all.domain_set.pkl
+- md5: d19596e6d00437ea6abf90665136404a
+  path: ../domain_set.pkl
+md5: 955a43bd42073714c1a7f0b166f1029f
+outs:
+- cache: true
+  md5: b78c37b48393b8febaa01e7df1a00210
+  path: mibig_bgcs_all.domain_set.tsne3.csv

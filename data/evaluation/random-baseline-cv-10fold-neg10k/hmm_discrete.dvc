@@ -1,0 +1,5 @@
+md5: 632eab292eadcb130cd38ad741377dc3
+outs:
+- cache: true
+  md5: 5e6ee6aae205659e993f7017804f88dc.dir
+  path: hmm_discrete

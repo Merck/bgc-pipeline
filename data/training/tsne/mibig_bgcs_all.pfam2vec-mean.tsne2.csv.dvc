@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/similarity/dim_reduction_matrix.py -i ../positive/mibig_bgcs_all.pfam2vec-mean.pkl
+  -o mibig_bgcs_all.pfam2vec-mean.tsne2.csv --metric cosine
+deps:
+- md5: fb07aac3083484275e41737dd1d602fb
+  path: ../positive/mibig_bgcs_all.pfam2vec-mean.pkl
+md5: 1ebd91e2e0123dd0b477278c706df645
+outs:
+- cache: true
+  md5: 3fd60c58355c501b4a0e20c1a506b097
+  path: mibig_bgcs_all.pfam2vec-mean.tsne2.csv

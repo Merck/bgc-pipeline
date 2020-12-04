@@ -1,0 +1,9 @@
+cmd: python ../../bgc_detection/preprocessing/proteins2fasta.py -i genome -e .gbk -f genbank
+  -o mibig_proteins.fa
+deps:
+- md5: 7a1eb1917cae0a841c0951a0e6c5c36f.dir
+  path: genome
+outs:
+- cache: true
+  md5: 33fc8d95a453e52b60984c0556a72222
+  path: mibig_proteins.fa

@@ -1,0 +1,9 @@
+cmd: ../../../bgc_detection/preprocessing/proteins2fasta.py -i CF_bgc_genomes.gbk -o CF_bgc_proteins.fa
+  -f genbank
+deps:
+- md5: e6aa0fe015a1cdc7b03f261b4c0abf19
+  path: CF_bgc_genomes.gbk
+outs:
+- cache: true
+  md5: 0b899ebd467436ae3965f9d6c815555b
+  path: CF_bgc_proteins.fa

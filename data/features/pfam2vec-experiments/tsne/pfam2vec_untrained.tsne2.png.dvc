@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/similarity/group_scatter_plot.py -i pfam2vec_untrained.tsne2.csv
+  -o pfam2vec_untrained.tsne2.png --label PfamVector
+deps:
+- md5: ef758ada329cd15aff3a498cdb957db7
+  path: pfam2vec_untrained.tsne2.csv
+md5: 93ddd4792737bcd96c71ffe3d95c8ab6
+outs:
+- cache: false
+  md5: cfb6c38d4c3de7b37b889be0cbea5429
+  path: pfam2vec_untrained.tsne2.png

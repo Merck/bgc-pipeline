@@ -1,0 +1,9 @@
+cmd: cp ../pfam2vec-untrained/pfam2vec_corpus-1e-02_skipgram_100dim.bin pfam2vec_untrained.bin
+deps:
+- md5: f9d627bf86df557fbad5b9c1260dd0d7
+  path: ../pfam2vec-untrained/pfam2vec_corpus-1e-02_skipgram_100dim.bin
+md5: 6a525b8a09cf23a4b84a203971ef6114
+outs:
+- cache: true
+  md5: f9d627bf86df557fbad5b9c1260dd0d7
+  path: pfam2vec_untrained.bin

@@ -1,0 +1,5 @@
+md5: 1b0c35f9d7469922757696cae959ca1e
+outs:
+- cache: true
+  md5: 6bb5fae0afb38696c73fdb1361fdbed8
+  path: mibig_bgcs_all.pfam-dst.csv

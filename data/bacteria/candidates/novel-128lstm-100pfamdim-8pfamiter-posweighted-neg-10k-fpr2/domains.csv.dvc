@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/candidates/candidate_domain_csv.py -i unique.csv
+  -o domains.csv
+deps:
+- md5: eee46f29a71ed56e7caa83938d88b00d
+  path: unique.csv
+md5: a861f9e70b5efaf790775d7d0812e55d
+outs:
+- cache: true
+  md5: 1f5813e4322e4520ea294f12648c8167
+  path: domains.csv

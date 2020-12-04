@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/candidates/threshold_candidates.py     -t 0.92605
+  --min-bio-domains 0 --min-nucleotides 0 --gene-gap 0     -o candidates.csv ../../prediction/128lstm-100pfamdim-8pfamiter-posweighted-neg-10k/
+deps:
+- md5: b0768d560f5c150f0c3f73ecc7f6eef7.dir
+  path: ../../prediction/128lstm-100pfamdim-8pfamiter-posweighted-neg-10k
+md5: af39818a0fd6cb0134854bf7b29ef1a2
+outs:
+- cache: true
+  md5: b47261b9e1928322367a3ce31337f054
+  path: candidates.csv

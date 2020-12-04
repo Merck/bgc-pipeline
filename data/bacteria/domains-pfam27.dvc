@@ -1,0 +1,12 @@
+cmd: mkdir -p domains-pfam27; python ../../bgc_detection/preprocessing/bacteria_domains_csv.py
+  -i domtbl -p proteins -o domains-pfam27
+deps:
+- md5: 630b11e3b518fd53f332b6e8b18f08fe.dir
+  path: domtbl-pfam27
+- md5: b49cec036a1b133fc123c71712fc4ab4.dir
+  path: proteins
+md5: 1bbfd56298ed286a40671c22e8f4b285
+outs:
+- cache: true
+  md5: 189ab206ee3228dace7e4832b852b8bc.dir
+  path: domains-pfam27

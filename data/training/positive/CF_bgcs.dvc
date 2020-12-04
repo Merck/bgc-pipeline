@@ -1,0 +1,14 @@
+cmd: python ../../../bgc_detection/samples/positive_clusterfinder.py -i ../../clusterfinder/bgc/CF_bgc_domains.csv
+  -g ../../clusterfinder/bgc/CF_bgc_genomes.gbk -o CF_bgcs
+deps:
+- md5: 0b2948474e397fc962091616e6aed96e
+  path: ../../clusterfinder/bgc/CF_bgc_domains.csv
+- md5: e6aa0fe015a1cdc7b03f261b4c0abf19
+  path: ../../clusterfinder/bgc/CF_bgc_genomes.gbk
+outs:
+- cache: true
+  md5: a373c2f10751ee667cde9e89289c36cb
+  path: CF_bgcs.csv
+- cache: true
+  md5: 1e2f651f99433d1b5b47dd885bcc6054
+  path: CF_bgcs.fa

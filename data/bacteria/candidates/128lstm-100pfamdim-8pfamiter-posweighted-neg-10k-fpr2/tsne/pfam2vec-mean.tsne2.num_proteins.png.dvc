@@ -1,0 +1,14 @@
+cmd: python ../../../../../bgc_detection/similarity/group_scatter_plot.py -i pfam2vec-mean.tsne2.csv
+  -o pfam2vec-mean.tsne2.num_proteins.png --group ../unique.csv --index candidate_hash  --size-column
+  avg_num_proteins --size 2 --title "Number of proteins - 3k Bacteria corpus LSTM
+  candidates t-SNE of pfam2vec-mean vectors" --alpha 0.2
+deps:
+- md5: ee9b7e0d419037862a6e649c8c7213da
+  path: pfam2vec-mean.tsne2.csv.dvc
+- md5: 21e59f6d641bc50f84cea2fdccc7e7dd
+  path: ../unique.csv
+md5: 8189ae9f4949484deb350bb6ab41b5ac
+outs:
+- cache: false
+  md5: 23c4517b1c23a58f45e27fdf34cef7f9
+  path: pfam2vec-mean.tsne2.num_proteins.png

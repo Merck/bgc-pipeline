@@ -1,0 +1,19 @@
+cmd: python ../../../../bgc_detection/evaluation/prediction_roc.py --prediction ../../../clusterfinder/labelled/prediction/antismash_clusterfinder.csv
+  --name "" --color blue --prediction ../../../clusterfinder/labelled/prediction/antismash_clusterfinder_bootstrapped.csv
+  --name "" --color lightblue --prediction ../../../clusterfinder/labelled/prediction/hmm_discrete.bgc_blast.csv
+  --name "" --color green --prediction ../../../clusterfinder/labelled/prediction/hmm_discrete_bootstrapped.bgc_blast.csv
+  --name "" --color lightgreen --prediction ../../../clusterfinder/labelled/prediction/lstm_bootstrapped.csv
+  --name "" --color red --title "Labelled contig per-domain ROC" -o 3a.pdf --size
+  3
+deps:
+- md5: 0beee72b48c57267e8b801d8fb19265a
+  path: ../../../clusterfinder/labelled/prediction/antismash_clusterfinder.csv
+- md5: 13ba6d6763f5b669dfccba31114fdcdb
+  path: ../../../clusterfinder/labelled/prediction/hmm_discrete.bgc_blast.csv
+- md5: d415833cc095740d8669f2bbe112350b
+  path: ../../../clusterfinder/labelled/prediction/lstm_bootstrapped.csv
+md5: be6b51d8e326422e8adb324d875216ad
+outs:
+- cache: false
+  md5: c36b42db254bc1f05ed04f2b70958a8b
+  path: 3a.pdf

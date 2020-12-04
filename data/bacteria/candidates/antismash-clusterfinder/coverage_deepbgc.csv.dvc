@@ -1,0 +1,12 @@
+cmd: python ../../../../bgc_detection/candidates/candidate_coverage.py -i candidates.csv
+  -o coverage_deepbgc.csv ../128lstm-100pfamdim-8pfamiter-posweighted-neg-10k-fpr2/candidates.csv
+deps:
+- md5: abd9951381aa8e3f669cfae75b902032
+  path: candidates.csv
+- md5: b47261b9e1928322367a3ce31337f054
+  path: ../128lstm-100pfamdim-8pfamiter-posweighted-neg-10k-fpr2/candidates.csv
+md5: 12e143ed1f2c391bb5b28458bfc546a6
+outs:
+- cache: true
+  md5: d05d544d169c9b34aede572ecb4796c2
+  path: coverage_deepbgc.csv

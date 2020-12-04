@@ -1,0 +1,12 @@
+cmd: ../../../bgc_detection/classification/train_multilabel_classifier.py -i ../../training/positive/mibig_bgcs_all.domain_set.pkl
+  -c ../../training/positive/mibig_bgcs_all.classes.filtered.csv -o random_forest_mibig.classes.pkl
+deps:
+- md5: 8433b4da5c215729175f62f294363416
+  path: ../../training/positive/mibig_bgcs_all.classes.filtered.csv
+- md5: ef29975903fb3faa4f2d48931c996100
+  path: ../../training/positive/mibig_bgcs_all.domain_set.pkl
+md5: 788696679b083724340e88b750dac20a
+outs:
+- cache: true
+  md5: ebb3f7ed9de42a16954156407986e27c
+  path: random_forest_mibig.classes.pkl

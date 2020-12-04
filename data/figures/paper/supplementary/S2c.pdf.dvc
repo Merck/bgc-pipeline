@@ -1,0 +1,14 @@
+cmd: 'python ../../../../bgc_detection/similarity/group_scatter_plot.py -i ../../../training/tsne/mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+  --figure-size 6 --xlim-from -90 --num-groups 10 --group ../../../mibig/mibig_properties.csv
+  --label species --size 1.5 --min-size 5 --size-column num_proteins --marker o --alpha
+  0.5 -o S3c.pdf --title "" --ax "pfam2vec mean: tsne" --legend "lower left"'
+deps:
+- md5: 3fd60c58355c501b4a0e20c1a506b097
+  path: ../../../training/tsne/mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+- md5: b387bee30197f4c802ad65d632539b5d
+  path: ../../../mibig/mibig_properties.csv
+md5: 8c01cbc49a1673432a8e0c1d0bb2dcc0
+outs:
+- cache: false
+  md5: 2894054466dea5f6b67e1c35b3137fe3
+  path: S3c.pdf

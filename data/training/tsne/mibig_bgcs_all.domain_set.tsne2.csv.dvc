@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/similarity/dim_reduction_matrix.py -i ../positive/mibig_bgcs_all.domain_set.pkl
+  -o mibig_bgcs_all.domain_set.tsne2.csv --metric cosine
+deps:
+- md5: ef29975903fb3faa4f2d48931c996100
+  path: ../positive/mibig_bgcs_all.domain_set.pkl
+md5: 8697dedb24502940b3e49146b0363b53
+outs:
+- cache: true
+  md5: 284178b43dfe2cf1ad28ead549d71691
+  path: mibig_bgcs_all.domain_set.tsne2.csv

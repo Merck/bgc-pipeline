@@ -1,0 +1,14 @@
+cmd: python ../../../bgc_detection/evaluate_splits.py -i splits/splits.csv -o results
+  --title 'Mean 10-fold Cross-validation ROC' hmm_discrete 128lstm-100pfamdim-8pfamiter-posweighted
+deps:
+- md5: ffd47559832239c7cd1e702159bb385b.dir
+  path: splits
+- md5: 2c5cb75acd667a817b11c93e9785caeb.dir
+  path: hmm_discrete
+- md5: 71ecbd5a7b442aef8c26d773fffd1041.dir
+  path: 128lstm-100pfamdim-8pfamiter-posweighted
+md5: 1bb51d04d38f062993e5762c2dd9247f
+outs:
+- cache: false
+  md5: 59c5d9fe8b04a6d72983fd5e872e82a7.dir
+  path: results

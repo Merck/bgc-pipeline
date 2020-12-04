@@ -1,0 +1,13 @@
+cmd: python ../../../../bgc_detection/antismash/antismash_cf_prediction_to_csv.py
+  -i ../antismash/clusterfinder-t0.99/CM000950.1.final.gbk -t ../CF_labelled_contigs_domains.pfam27.csv
+  -o antismash_clusterfinder.csv
+deps:
+- md5: 0c213dd8e9437f939bdf26788e2e97cc
+  path: ../antismash/clusterfinder-t0.99/CM000950.1.final.gbk
+- md5: 69ad634f91466311a027e5161ed37be1
+  path: ../CF_labelled_contigs_domains.pfam27.csv
+md5: 96d743b270f07b2258caab6cc63a3111
+outs:
+- cache: true
+  md5: 0beee72b48c57267e8b801d8fb19265a
+  path: antismash_clusterfinder.csv

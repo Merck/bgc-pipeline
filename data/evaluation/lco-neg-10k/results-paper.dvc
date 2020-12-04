@@ -1,0 +1,15 @@
+cmd: python ../../../bgc_detection/evaluate_splits.py -i splits/splits.csv -o results-paper
+  --title 'Mean Leave-class-out ROC' hmm_discrete 128lstm-100pfamdim-8pfamiter-posweighted
+  --size 3
+deps:
+- md5: b303d825a47826cace412d0839cb1193.dir
+  path: splits
+- md5: cd443cefcaf78ef7488ba43f4063f12c.dir
+  path: hmm_discrete
+- md5: b215d71fdf256cab4f961c0146b93ccf.dir
+  path: 128lstm-100pfamdim-8pfamiter-posweighted
+md5: 5861f4398d130b1939a4e17bc52e437e
+outs:
+- cache: false
+  md5: dd6e484ef3b412f24539ba8b1be84433.dir
+  path: results-paper

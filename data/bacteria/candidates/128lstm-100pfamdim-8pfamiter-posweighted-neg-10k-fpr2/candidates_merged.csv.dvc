@@ -1,0 +1,22 @@
+cmd: python ../../../../bgc_detection/candidates/top_candidates.py -i coverage.csv
+  -o candidates_merged.csv -s ../../species.tsv -c ../../prediction/hmm_clusterfinder/
+  classes/class-domain_set-rf/classes.csv classes/activity-domain_set-rf/classes.csv
+  positive_similarity_best.csv
+deps:
+- md5: 5c2f5b3d2c5963c69298459fa3eb0eab
+  path: coverage.csv
+- md5: 51237e742a770780f22f7432d7d094e5
+  path: positive_similarity_best.csv
+- md5: 89c4a102dd1a7fc2e7e628a4162c9320
+  path: ../../species.tsv
+- md5: b3be3c90d4eab1c68fe75916c9b747c3.dir
+  path: ../../prediction/hmm_clusterfinder
+- md5: f72cf5eca56d2c17f67e98e544abaaae
+  path: classes/activity-domain_set-rf/classes.csv
+- md5: fe9c92dcab06cc70f28da58a4923f6b2
+  path: classes/class-domain_set-rf/classes.csv
+md5: 08e0fa9c7e2d058334528bbec0fab651
+outs:
+- cache: true
+  md5: 070eea2dd923c0404d4595df3770fa47
+  path: candidates_merged.csv

@@ -1,0 +1,11 @@
+cmd: python ../../../../bgc_detection/evaluation/prediction_roc.py --prediction hmm_geneborder.bgc_blast.csv   --name
+  hmm_geneborder.bgc_blast --color purple --title 'Labelled contig per-domain ROC'
+  -o hmm_geneborder.bgc_blast.png
+deps:
+- md5: 38b8c651e50bb74444d46fa0c7645745
+  path: hmm_geneborder.bgc_blast.csv
+md5: 9ec2bad77f10571299bd92b13e7204d4
+outs:
+- cache: false
+  md5: 3dc926dc2c117a8b612b4fceb1d2f2bc
+  path: hmm_geneborder.bgc_blast.png

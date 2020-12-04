@@ -1,0 +1,10 @@
+cmd: python -c "import pandas as pd; pd.read_csv(\"../CF_labelled_contigs_domains.csv\").rename(columns={\"in_cluster\":\"prediction\"}).to_csv(\"true_output.csv\",
+  index=False);"
+deps:
+- md5: 1e941025645e1f81fa2390f427ea7e9a
+  path: ../CF_labelled_contigs_domains.csv
+md5: d71552dba8fa2458abb854e602da00d2
+outs:
+- cache: true
+  md5: 4357cebbc29d695fa043b54a4fcf252a
+  path: true_output.csv

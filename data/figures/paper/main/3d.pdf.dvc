@@ -1,0 +1,9 @@
+cmd: cp ../../../evaluation/lco-neg-10k/results-paper/roc_mean.pdf 3d.pdf
+deps:
+- md5: b613fcf5dc79b12a6b1e817e25a2c4e9
+  path: ../../../evaluation/lco-neg-10k/results-paper/roc_mean.pdf
+md5: b8151987d2acc29f3527b5728c236797
+outs:
+- cache: false
+  md5: b613fcf5dc79b12a6b1e817e25a2c4e9
+  path: 3d.pdf

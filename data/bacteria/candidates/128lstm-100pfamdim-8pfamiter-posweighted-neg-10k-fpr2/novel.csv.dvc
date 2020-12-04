@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/candidates/filter_candidates.py --max-coverage
+  0 -i candidates_merged.csv -o novel.csv
+deps:
+- md5: 070eea2dd923c0404d4595df3770fa47
+  path: candidates_merged.csv
+md5: 1f3d059d6fdbf15581e94483fb026c50
+outs:
+- cache: true
+  md5: c501a9d66dad7ff3aec15ee9a3b8c4ab
+  path: novel.csv

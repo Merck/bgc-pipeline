@@ -1,0 +1,13 @@
+candidates.csv
+unique.csv
+coverage.csv
+novel.csv
+domains.csv
+domain_set.pkl
+domain_ratios.pkl
+pfam2vec-mean.pkl
+positive_similarity.csv
+positive_similarity_best.csv
+candidates_merged.csv
+novel.gbk
+long.csv

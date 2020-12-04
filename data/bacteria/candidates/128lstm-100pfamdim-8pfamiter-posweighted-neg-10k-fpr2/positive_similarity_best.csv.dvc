@@ -1,0 +1,11 @@
+cmd: 'python -c "import pandas as pd; sim = pd.read_csv(''./positive_similarity.csv'').set_index(''contig_id'');
+  best_idx = sim.idxmax(axis=1); best = sim.max(axis=1); pd.DataFrame({''BGC_ID'':
+  best_idx, ''Similarity'': best}).to_csv(''positive_similarity_best.csv'');"'
+deps:
+- md5: cb9698bc51f7a693b0eef841b611ead4
+  path: positive_similarity.csv
+md5: 9ae15919ba8e9673e351210acdc9be26
+outs:
+- cache: true
+  md5: 51237e742a770780f22f7432d7d094e5
+  path: positive_similarity_best.csv

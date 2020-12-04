@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/similarity/distance_clustering.py -i mibig_bgcs_all.domain_set.pkl
+  --num-clusters 5 --method kmeans --metric euclidean -o mibig_bgcs_all.domain_set.5means.csv
+deps:
+- md5: ef29975903fb3faa4f2d48931c996100
+  path: mibig_bgcs_all.domain_set.pkl
+md5: 5a2785c1573f4bc75c47b0efa5e98727
+outs:
+- cache: true
+  md5: 2064813051979838ea0c42e370680d2a
+  path: mibig_bgcs_all.domain_set.5means.csv

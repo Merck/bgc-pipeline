@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/preprocessing/domtbl2csv.py -i 74validation_domtbl.tbl
+  -f proteins2fasta -o 74validation_domains.csv
+deps:
+- md5: 99d423ca16d9adf6714b7b3dd050c824
+  path: 74validation_domtbl.tbl
+md5: 8470db6862041c9150c35a7949e6eacb
+outs:
+- cache: true
+  md5: 60b52224bd102c2f857b3b7f83579bee
+  path: 74validation_domains.csv

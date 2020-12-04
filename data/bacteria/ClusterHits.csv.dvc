@@ -1,0 +1,9 @@
+cmd: python ../../bgc_detection/preprocessing/bacteria_cluster_hits.py -i QcHitsRanno.tsv -o
+  ClusterHits.csv
+deps:
+- md5: c8eeeab2c8e5137b02c4b9d2004209f5
+  path: QcHitsRanno.tsv
+outs:
+- cache: true
+  md5: 2439c42e2452c48da3ebb79986d0fb27
+  path: ClusterHits.csv

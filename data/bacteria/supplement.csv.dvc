@@ -1,0 +1,13 @@
+cmd: 'python -c "import pandas as pd; import os; species = pd.read_csv(''species.tsv'',
+  sep=''\t''); species[species[''contig_id''].apply(lambda c: os.path.exists(''domains/{}.domains.csv''.format(c)))].to_csv(''supplement.csv'',
+  index=False)"'
+deps:
+- md5: 89c4a102dd1a7fc2e7e628a4162c9320
+  path: species.tsv
+- md5: 189ab206ee3228dace7e4832b852b8bc.dir
+  path: domains
+md5: 8978433fc72aa67f9c2db9998c6c035c
+outs:
+- cache: true
+  md5: 874a2b0e089bae703097946499cbe180
+  path: supplement.csv

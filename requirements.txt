@@ -1,0 +1,12 @@
+numpy
+scikit-learn
+pandas
+flask
+gevent
+gunicorn
+keras
+tensorflow
+hmmlearn
+word2vec
+matplotlib
+dvc==0.22.0

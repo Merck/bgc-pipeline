@@ -1,0 +1,12 @@
+cmd: python ../../bgc_detection/preprocessing/mibig_compounds.py -g genome -j json
+  -o mibig_compounds.csv
+deps:
+- md5: 7a1eb1917cae0a841c0951a0e6c5c36f.dir
+  path: genome
+- md5: 02ed96526cc2ece1112a1f8b3ae309ba.dir
+  path: json
+md5: 940d7bfd642d9835dc511ef1f55fb2fa
+outs:
+- cache: true
+  md5: 8aae1e4a0ee3252f50c78d87976ebd21
+  path: mibig_compounds.csv

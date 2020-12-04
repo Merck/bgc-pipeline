@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/similarity/domain_set_vectors.py -i mibig_bgcs_all.csv
+  -o mibig_bgcs_all.domain_ratios.pkl --ratios
+deps:
+- md5: f33cf6af1aa1c9423a4057a48f0f99ff
+  path: mibig_bgcs_all.csv
+md5: 217b52438309a78e9fba61911b61a793
+outs:
+- cache: true
+  md5: d8011b767af7ea46a858a41c599c3b50
+  path: mibig_bgcs_all.domain_ratios.pkl

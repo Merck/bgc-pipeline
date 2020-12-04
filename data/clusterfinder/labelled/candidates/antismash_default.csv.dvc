@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/antismash/antismash_candidates.py -i ../antismash/default/CM000950.1.final.gbk
+  -o antismash_default.csv
+deps:
+- md5: 5cb35978b31126ce40b23e502c5a6dd1
+  path: ../antismash/default/CM000950.1.final.gbk
+md5: 22386b55d09b5fb7cd16e80661e01d65
+outs:
+- cache: true
+  md5: fe4560db0667eaf7702e88f038f82428
+  path: antismash_default.csv

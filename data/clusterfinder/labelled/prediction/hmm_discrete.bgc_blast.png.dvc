@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/evaluation/prediction_roc.py --prediction hmm_discrete.bgc_blast.csv   --name
+  hmm_discrete.bgc_blast --color red --title 'Labelled contig per-domain ROC' -o hmm_discrete.bgc_blast.png
+deps:
+- md5: 13ba6d6763f5b669dfccba31114fdcdb
+  path: hmm_discrete.bgc_blast.csv
+md5: 530cc2ff1f140e94815a5ffeded985da
+outs:
+- cache: false
+  md5: 68574157e2a0b38a7d998772ad504d44
+  path: hmm_discrete.bgc_blast.png

@@ -1,0 +1,20 @@
+cmd: wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam27.0/Pfam-A.hmm.gz -O
+  Pfam-A.27.hmm.gz && gunzip Pfam-A.27.hmm.gz && hmmpress Pfam-A.27.hmm
+locked: true
+md5: be0cbfd42bbe8f33f16d40df467c33b1
+outs:
+- cache: true
+  md5: 4bbbd0105827633e4933e344bfe0e92f
+  path: Pfam-A.27.hmm
+- cache: true
+  md5: 6d89531057493362b0c91c97e5a843bf
+  path: Pfam-A.27.hmm.h3f
+- cache: true
+  md5: 0ee8c49a85be112ee21711f55d5a489a
+  path: Pfam-A.27.hmm.h3i
+- cache: true
+  md5: 641fe5fe37e4a67aad8fa4b5134f311e
+  path: Pfam-A.27.hmm.h3m
+- cache: true
+  md5: c87182c2b64cf904602ea9194d93797c
+  path: Pfam-A.27.hmm.h3p

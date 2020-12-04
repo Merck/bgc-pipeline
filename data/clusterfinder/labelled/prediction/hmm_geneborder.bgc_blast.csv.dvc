@@ -1,0 +1,12 @@
+cmd: python ../../../../bgc_detection/run_prediction.py -m ../../../models/trained/hmm_geneborder.bgc_blast.pickle
+  -o hmm_geneborder.bgc_blast.csv -e 0.01 ../CF_labelled_contigs_domains.csv
+deps:
+- md5: 71cb73cd95056f43258bc84f6cb96629
+  path: ../../../models/trained/hmm_geneborder.bgc_blast.pickle
+- md5: 1e941025645e1f81fa2390f427ea7e9a
+  path: ../CF_labelled_contigs_domains.csv
+md5: 94bce02d1847f7039f8db90ebcc3027b
+outs:
+- cache: true
+  md5: 38b8c651e50bb74444d46fa0c7645745
+  path: hmm_geneborder.bgc_blast.csv

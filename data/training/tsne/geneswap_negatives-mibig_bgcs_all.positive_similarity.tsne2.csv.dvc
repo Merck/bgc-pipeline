@@ -1,0 +1,13 @@
+cmd: python ../../../bgc_detection/similarity/dim_reduction_matrix.py -i ../positive/mibig_bgcs_all.sequence_similarity.csv
+  -i ../negative/geneswap_negatives.positive_similarity.csv -o geneswap_negatives-mibig_bgcs_all.positive_similarity.tsne2.csv
+  --metric cosine
+deps:
+- md5: f4ec89ea1048e4cd567cf91c01dee36a
+  path: ../positive/mibig_bgcs_all.sequence_similarity.csv
+- md5: 51beefc0692428cdf93cdc500e2aa6f2
+  path: ../negative/geneswap_negatives.positive_similarity.csv
+md5: a357f5c575abf9b44e09c67011c1997b
+outs:
+- cache: true
+  md5: 27eb89cb60888c5b6900838a63518c95
+  path: geneswap_negatives-mibig_bgcs_all.positive_similarity.tsne2.csv

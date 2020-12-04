@@ -1,0 +1,14 @@
+cmd: mkdir -p clusterfinder-t0.40-1bio && antismash ../74validation_contigs.gbk --debug
+  --cf_cdsnr 1 --cf_npfams 1 --cf_threshold 0.40 --inclusive --minimal --outputfolder
+  clusterfinder-t0.40-1bio 2>&1 | tee clusterfinder-t0.40-1bio.log
+deps:
+- md5: 120939e1ea34ccb98400a07c274409ed
+  path: ../74validation_contigs.gbk
+md5: e6ea7b169c7c73ff19995146645d6416
+outs:
+- cache: true
+  md5: 39b9ad9a78cc1f718b822fd4fb5dd717.dir
+  path: clusterfinder-t0.40-1bio
+- cache: true
+  md5: 8fd57ee2a87b4637f7682b9acb3623d6
+  path: clusterfinder-t0.40-1bio.log

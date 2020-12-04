@@ -1,0 +1,34 @@
+{
+  "type": "KerasRNN",
+  "color": "green",
+  "label": "Bi-LSTM pfam2vec",
+  "build_params": {
+    "batch_size": 64,
+    "hidden_size": 128,
+    "stateful": true
+  },
+  "fit_params": {
+    "timesteps": 256,
+    "validation_size": 0,
+    "verbose": 1,
+    "num_epochs": 328,
+    "gpus": 0,
+    "shuffle": true,
+    "optimizer": "adam",
+    "learning_rate": 0.0001,
+    "positive_weight": 16.415
+  },
+  "input_params": {
+    "features": [
+      {
+        "type": "ProteinBorderTransformer"
+      },
+      {
+        "type": "Pfam2VecTransformer",
+        "vector_path": "{PFAM2VEC}/pfam2vec_corpus-1e-02_skipgram_100dim_5win_8iter.bin"
+      }
+    ]
+  }
+}
+
+

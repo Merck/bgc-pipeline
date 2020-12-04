@@ -1,0 +1,15 @@
+cmd: python ../../../bgc_detection/similarity/group_scatter_plot.py -i mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+  --figure-size 15 --num-groups 12 --group ../../mibig/mibig_properties.csv --label
+  species --size 3 --min-size 30 --size-column num_proteins --marker o --alpha 0.7
+  -o mibig_bgcs_all.pfam2vec-mean.tsne2.species.png --title "Species, number of proteins
+  - MIBiG Positives t-SNE of pfam2vec-mean vectors" --legend "upper right"
+deps:
+- md5: 3fd60c58355c501b4a0e20c1a506b097
+  path: mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+- md5: b387bee30197f4c802ad65d632539b5d
+  path: ../../mibig/mibig_properties.csv
+md5: 2265d94461bcbb20ef08998522697ebe
+outs:
+- cache: false
+  md5: 8714c5ad58b6a37865c56e1673ca7cb3
+  path: mibig_bgcs_all.pfam2vec-mean.tsne2.species.png

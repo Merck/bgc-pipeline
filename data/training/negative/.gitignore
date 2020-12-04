@@ -1,0 +1,15 @@
+geneswap_negatives.csv
+geneswap_negatives.positive_similarity.csv
+geneswap_negatives.domain_ratios.pkl
+geneswap_negatives.domain_set.pkl
+geneswap_negatives.pfam2vec-mean.pkl
+geneswap_negatives.pfam27.csv
+geneswap_negatives.pfam27.fa
+geneswap_negatives.pp_blast.csv
+geneswap_negatives.pp_blast.pfam27.csv
+geneswap_negatives.pp_blast.pfam2vec-mean.pkl
+geneswap_negatives.first_neg.csv
+geneswap_negatives.seed2.csv
+geneswap_negatives.seed3.csv
+geneswap_negatives.3k.csv
+geneswap_negatives.6k.csv

@@ -1,0 +1,5 @@
+md5: 34e3ceb3c6e3b79a6c6662fb487333cb
+outs:
+- cache: true
+  md5: b0d0ce73f1359c8697b80023a73de5e3
+  path: interpro_props.csv

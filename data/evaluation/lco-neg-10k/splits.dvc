@@ -1,0 +1,16 @@
+cmd: python ../../../bgc_detection/evaluation/lco_split.py --positive ../../training/positive/mibig_bgcs_all.csv
+  --classes ../../mibig/mibig_properties.csv --negative ../../training/negative/geneswap_negatives.csv
+  --pos-test-count 500 --maxevalue 0.01 --random-seed 0 --random-seed 1 --random-seed
+  2 --output splits
+deps:
+- md5: 21a812171cc32d499ea67f8057cc6cb5
+  path: ../../training/negative/geneswap_negatives.csv
+- md5: f33cf6af1aa1c9423a4057a48f0f99ff
+  path: ../../training/positive/mibig_bgcs_all.csv
+- md5: b387bee30197f4c802ad65d632539b5d
+  path: ../../mibig/mibig_properties.csv
+md5: 191247b0a1b8bb201de67e0178ae1d8b
+outs:
+- cache: true
+  md5: b303d825a47826cace412d0839cb1193.dir
+  path: splits

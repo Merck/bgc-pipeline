@@ -1,0 +1,16 @@
+cmd: mkdir -p clusterfinder-default && antismash ../CF_labelled_contigs.gbk --debug
+  --inclusive --minimal --outputfolder clusterfinder-default 2>&1 | tee clusterfinder-default.log
+deps:
+- md5: 85776cff19ab023ad81af7ba4ca653eb
+  path: ../CF_labelled_contigs.gbk
+md5: f097b994293733f1c41c8fd6f26acc8b
+outs:
+- cache: true
+  md5: 0857417829d1dbf97efc48bc2c1f4d6e.dir
+  metric: false
+  path: clusterfinder-default
+- cache: true
+  md5: a10d9bf427554e8475882f295b1a3d0a
+  metric: false
+  path: clusterfinder-default.log
+

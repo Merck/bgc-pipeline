@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/preprocessing/proteins2fasta.py -i 74validation_contigs.gbk
+  -o 74validation_proteins.fa -f genbank
+deps:
+- md5: 120939e1ea34ccb98400a07c274409ed
+  path: 74validation_contigs.gbk
+md5: 7578da56ba6e45c889d439be3e0db86a
+outs:
+- cache: true
+  md5: 6ccca6fc110558a880b057028c944a1c
+  path: 74validation_proteins.fa

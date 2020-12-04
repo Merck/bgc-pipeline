@@ -1,0 +1,6 @@
+AM746676.1 https://www.ncbi.nlm.nih.gov/nuccore/161158851?sat=18&satkey=27961561
+NC_009380.1 https://www.ncbi.nlm.nih.gov/nuccore/145592566?sat=17&satkey=24111278
+AP009493.1 https://www.ncbi.nlm.nih.gov/nuccore/178462309?sat=46&satkey=35495658
+AM420293.1 https://www.ncbi.nlm.nih.gov/nuccore/133909243?sat=18&satkey=27961555
+NC_004129.6 https://www.ncbi.nlm.nih.gov/nuccore/70728250?sat=17&satkey=23905419
+NC_007413.1 https://www.ncbi.nlm.nih.gov/nuccore/75906225?sat=17&satkey=23905482

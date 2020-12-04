@@ -1,0 +1,13 @@
+cmd: python ../../../../bgc_detection/similarity/group_scatter_plot.py -i pfam2vec_top.tsne2.csv
+  -o pfam2vec_top.tsne2.bgc_prob.png --group ../../bgc_prob.csv --index pfam_id --label
+  bgc_prob --num-groups 10 --figure-size 10
+deps:
+- md5: 05f47a3b16b665eec6a7bf77e6025e3e
+  path: pfam2vec_top.tsne2.csv
+- md5: ba751c7f44ca203ea1b5b8d2cf3ae4cf
+  path: ../../bgc_prob.csv
+md5: 3ceccdf87c59586e113a8cec96c3add4
+outs:
+- cache: false
+  md5: 78bd8a572d6f6eb75601ef579d8a939c
+  path: pfam2vec_top.tsne2.bgc_prob.png

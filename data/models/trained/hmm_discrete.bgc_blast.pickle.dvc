@@ -1,0 +1,14 @@
+cmd: ../../../bgc_detection/run_training.py -c ../config/hmm_discrete.json -e 0.01
+  -o hmm_discrete.bgc_blast.pickle ../../training/positive/CF_bgcs.csv ../../training/negative/geneswap_negatives.csv
+deps:
+- md5: 420b3df567fb02bc5437477fc98580f0
+  path: ../config/hmm_discrete.json
+- md5: a373c2f10751ee667cde9e89289c36cb
+  path: ../../training/positive/CF_bgcs.csv
+- md5: 21a812171cc32d499ea67f8057cc6cb5
+  path: ../../training/negative/geneswap_negatives.csv
+md5: 06d49ad9a231ff46c1e01a02214806ad
+outs:
+- cache: true
+  md5: 55b1ff59fe5958bfccea0f8d0f14eca8
+  path: hmm_discrete.bgc_blast.pickle

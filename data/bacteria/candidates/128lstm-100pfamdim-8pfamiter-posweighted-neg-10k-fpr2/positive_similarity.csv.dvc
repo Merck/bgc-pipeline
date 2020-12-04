@@ -1,0 +1,12 @@
+cmd: python ../../../../bgc_detection/similarity/sequence_similarity_matrix.py -c
+  ../../../training/positive/mibig_bgcs_all.csv -o positive_similarity.csv domains.csv
+deps:
+- md5: eb82e1ea651dd0fdc764b49bdff980b4
+  path: domains.csv
+- md5: f33cf6af1aa1c9423a4057a48f0f99ff
+  path: ../../../training/positive/mibig_bgcs_all.csv
+md5: 0996db40c9241c81c28ad0febb4d8333
+outs:
+- cache: true
+  md5: cb9698bc51f7a693b0eef841b611ead4
+  path: positive_similarity.csv

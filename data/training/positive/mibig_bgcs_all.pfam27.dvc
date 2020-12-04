@@ -1,0 +1,15 @@
+cmd: python ../../../bgc_detection/samples/positive_mibig.py -i ../../mibig/mibig_domains.pfam27.csv
+  -g ../../mibig/genome -o mibig_bgcs_all.pfam27 -md 1 -mp 1 -e 0.01
+deps:
+- md5: 43b522782d483c637e7fbc5889251c60
+  path: ../../mibig/mibig_domains.pfam27.csv
+- md5: 7a1eb1917cae0a841c0951a0e6c5c36f.dir
+  path: ../../mibig/genome
+md5: c54be12f508aaf66f1ad294f513b13f7
+outs:
+- cache: true
+  md5: ae8c339cb454037de32ef0d8de33592b
+  path: mibig_bgcs_all.pfam27.csv
+- cache: true
+  md5: 57d9596525a6af846441499d7933c888
+  path: mibig_bgcs_all.pfam27.fa

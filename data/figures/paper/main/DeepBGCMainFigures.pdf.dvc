@@ -1,0 +1,18 @@
+cmd: '"/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py"
+  -o DeepBGCMainFigures.pdf 1.pdf 2.pdf 3.pdf 4.pdf 5.pdf'
+deps:
+- md5: 065df3679e5fc1fba7fbbdddab238e4f
+  path: 1.pdf
+- md5: 693398a2697b6771b9e1c6b9001739c1
+  path: 2.pdf
+- md5: ed7b0a838c1f7504e3e21eb5e8d56288
+  path: 3.pdf
+- md5: f913d401cfc77d30c18971b9882d6629
+  path: 4.pdf
+- md5: 805f82bd0408e77ccb820740f50e769b
+  path: 5.pdf
+md5: 889995714bb8f5f20ff717945251b5d8
+outs:
+- cache: false
+  md5: fc1a0ae4e8331a2d7793957ddc89d6e3
+  path: DeepBGCMainFigures.pdf

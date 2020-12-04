@@ -1,0 +1,10 @@
+cmd: mkdir -p pfam2vec-pfam27 && ../../bgc_detection/sub.sh python ../../bgc_detection/features/pfam2vec.py
+  -i ../bacteria/corpus/corpus-1e-02.pfam27.txt -d 10 -d 20 -d 50 -d 100 -o pfam2vec-pfam27
+deps:
+- md5: 06e3ec71ecf2cd2ef9b1de74e0d08b4d
+  path: ../bacteria/corpus/corpus-1e-02.pfam27.txt
+md5: 6b84afb668f894b8ad4edd40fcef920e
+outs:
+- cache: true
+  md5: 259cb73f034f913215ab1697364297d8.dir
+  path: pfam2vec-pfam27

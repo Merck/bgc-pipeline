@@ -1,0 +1,20 @@
+cmd: wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam31.0/Pfam-A.hmm.gz &&
+  gunzip Pfam-A.hmm.gz && hmmpress Pfam-A.hmm
+locked: true
+md5: 343986533c2ca534c644b935cd23112b
+outs:
+- cache: true
+  md5: 79a3328e4c95b13949a4489b19959fc5
+  path: Pfam-A.hmm
+- cache: true
+  md5: 2e5e23e0eb8acac2d003c9f520ceada0
+  path: Pfam-A.hmm.h3f
+- cache: true
+  md5: 9bac0dbbf199e44283c7ba201d2b4207
+  path: Pfam-A.hmm.h3i
+- cache: true
+  md5: 887e6aeb797f7f208e605ffc24408f44
+  path: Pfam-A.hmm.h3m
+- cache: true
+  md5: 5dbfd608bcd79af572d47f970fc60f8d
+  path: Pfam-A.hmm.h3p

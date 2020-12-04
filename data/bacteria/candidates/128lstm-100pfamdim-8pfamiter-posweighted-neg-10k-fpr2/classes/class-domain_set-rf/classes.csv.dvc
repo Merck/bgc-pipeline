@@ -1,0 +1,12 @@
+cmd: ../../../../../../bgc_detection/classification/predict_classes.py -i ../../domain_set.pkl
+  -m ../../../../../models/trained/random_forest_mibig.classes.pkl -o classes.csv
+deps:
+- md5: ebb3f7ed9de42a16954156407986e27c
+  path: ../../../../../models/trained/random_forest_mibig.classes.pkl
+- md5: d19596e6d00437ea6abf90665136404a
+  path: ../../domain_set.pkl
+md5: 435dcd2ca2a30b04e26aedc9d9a6615c
+outs:
+- cache: false
+  md5: fe9c92dcab06cc70f28da58a4923f6b2
+  path: classes.csv

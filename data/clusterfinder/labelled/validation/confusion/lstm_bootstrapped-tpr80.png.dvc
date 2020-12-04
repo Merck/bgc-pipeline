@@ -1,0 +1,10 @@
+cmd: python ../../../../../bgc_detection/evaluation/confusion_matrix.py -t 'Per-domain
+  confusion matrix' -o lstm_bootstrapped-tpr80.png --tpr 0.80 ../../prediction/lstm_bootstrapped.csv
+deps:
+- md5: d415833cc095740d8669f2bbe112350b
+  path: ../../prediction/lstm_bootstrapped.csv
+md5: 9b6b969e99f951a6b4db40f9f169be57
+outs:
+- cache: false
+  md5: 3b4b5c121befd1ba7f25efbcd1c96fb8
+  path: lstm_bootstrapped-tpr80.png

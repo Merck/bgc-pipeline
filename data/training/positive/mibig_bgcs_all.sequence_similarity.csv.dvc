@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/similarity/sequence_similarity_matrix.py -o mibig_bgcs_all.sequence_similarity.csv
+  mibig_bgcs_all.csv
+deps:
+- md5: f33cf6af1aa1c9423a4057a48f0f99ff
+  path: mibig_bgcs_all.csv
+md5: 352de6b15ad95e3238e88c25bc34c1cb
+outs:
+- cache: true
+  md5: f4ec89ea1048e4cd567cf91c01dee36a
+  path: mibig_bgcs_all.sequence_similarity.csv

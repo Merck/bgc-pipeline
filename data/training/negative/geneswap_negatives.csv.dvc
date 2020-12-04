@@ -1,0 +1,14 @@
+cmd: python ../../../bgc_detection/samples/negative_clusters.py --input ../../clusterfinder/bgc/CF_bgc_domains.csv
+  --bacteria ../../bacteria/domains --hits ../../bacteria/ClusterHits.csv --output
+  geneswap_negatives.csv --min-domains 10 --min-proteins 4 --max-evalue 0.01 --similar-fraction
+  0.01 --num 3 --random 123
+deps:
+- md5: 0b2948474e397fc962091616e6aed96e
+  path: ../../clusterfinder/bgc/CF_bgc_domains.csv
+- md5: 189ab206ee3228dace7e4832b852b8bc.dir
+  path: ../../bacteria/domains
+md5: 0b3593e3de1ced4fb1ca8578061eebda
+outs:
+- cache: true
+  md5: 21a812171cc32d499ea67f8057cc6cb5
+  path: geneswap_negatives.csv

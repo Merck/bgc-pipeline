@@ -1,0 +1,11 @@
+cmd: python ../../../../bgc_detection/candidates/candidate_genbank.py -i candidates_merged.csv
+  -b ../../genbank -o candidates_merged.gbk
+deps:
+- md5: 070eea2dd923c0404d4595df3770fa47
+  path: candidates_merged.csv
+- md5: c5976ebd0831460374d888863d3e5e65.dir
+  path: ../../genbank
+outs:
+- cache: true
+  md5: 95ecc0bdf90f76663a92df51d80e9c35
+  path: candidates_merged.gbk

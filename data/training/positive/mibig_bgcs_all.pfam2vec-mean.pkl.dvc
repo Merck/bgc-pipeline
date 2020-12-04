@@ -1,0 +1,12 @@
+cmd: python ../../../bgc_detection/similarity/pfam2vec_mean_vectors.py -p ../../features/pfam2vec-experiments/pfam2vec_top.bin
+  -i mibig_bgcs_all.csv -o mibig_bgcs_all.pfam2vec-mean.pkl
+deps:
+- md5: f33cf6af1aa1c9423a4057a48f0f99ff
+  path: mibig_bgcs_all.csv
+- md5: 14d44cc2bf981f0bcde26bbc36516b60
+  path: ../../features/pfam2vec-experiments/pfam2vec_top.bin
+md5: bd4dd3549c1e1ae963831926b902bfb3
+outs:
+- cache: true
+  md5: fb07aac3083484275e41737dd1d602fb
+  path: mibig_bgcs_all.pfam2vec-mean.pkl

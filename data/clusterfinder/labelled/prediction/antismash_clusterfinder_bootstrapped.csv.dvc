@@ -1,0 +1,15 @@
+cmd: python -c "import pandas as pd; domains=pd.read_csv('antismash_clusterfinder.csv');
+  splits=pd.read_csv('../../../evaluation/labelled-bootstrap/splits/splits.csv');
+  split_contig_ids=splits['test_contigs']; bootstrapped = pd.concat([domains[domains['contig_id'].isin(contig_ids.split(','))]
+  for contig_ids in split_contig_ids]); bootstrapped.to_csv('antismash_clusterfinder_bootstrapped.csv',
+  index=False);"
+deps:
+- md5: 0beee72b48c57267e8b801d8fb19265a
+  path: antismash_clusterfinder.csv
+- md5: 610974bf312a8254daa02e22995c982c
+  path: ../../../evaluation/labelled-bootstrap/splits/splits.csv
+md5: a131489305598e8b10e5707b08a13df2
+outs:
+- cache: true
+  md5: 3defa96fc623bf37d7ce104e886a799e
+  path: antismash_clusterfinder_bootstrapped.csv

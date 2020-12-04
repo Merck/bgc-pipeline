@@ -1,0 +1,17 @@
+cmd: python ../../../../bgc_detection/evaluation/prediction_roc.py --prediction ../prediction/hmm_discrete.bgc_blast.csv
+  --name "HMM Reconstructed" --color green --prediction ../prediction/hmm_geneborder.bgc_blast.csv
+  --name "HMM GeneBorder" --color purple --prediction ../prediction/lstm_bootstrapped.csv
+  --name "LSTM (Bootstrapped)" --color red --title "Labelled contig per-domain ROC"
+  -o labelled_contig_roc_top.png
+deps:
+- md5: 13ba6d6763f5b669dfccba31114fdcdb
+  path: ../prediction/hmm_discrete.bgc_blast.csv
+- md5: 38b8c651e50bb74444d46fa0c7645745
+  path: ../prediction/hmm_geneborder.bgc_blast.csv
+- md5: d415833cc095740d8669f2bbe112350b
+  path: ../prediction/lstm_bootstrapped.csv
+md5: 3d71b263127258852301ba2cbeb12eaf
+outs:
+- cache: false
+  md5: 0b7aae27990af3d7d50b156214ba6c3f
+  path: labelled_contig_roc_top.png

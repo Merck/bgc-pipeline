@@ -1,0 +1,10 @@
+cmd: ../../../bgc_detection/run_training.py -c ../config/hmm_clusterfinder.json -e
+  0.01 -o hmm_clusterfinder.pickle
+deps:
+- md5: 84d30099a52a06887130c1341d974cab
+  path: ../config/hmm_clusterfinder.json
+md5: 6e7fc9127294ffebd9c7efb270caca4a
+outs:
+- cache: true
+  md5: 1d64da4b8458ec5478ba0822e9ff1a61
+  path: hmm_clusterfinder.pickle

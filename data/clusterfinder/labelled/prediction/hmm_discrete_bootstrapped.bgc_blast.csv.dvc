@@ -1,0 +1,15 @@
+cmd: python -c "import pandas as pd; domains=pd.read_csv('hmm_discrete.bgc_blast.csv');
+  splits=pd.read_csv('../../../evaluation/labelled-bootstrap/splits/splits.csv');
+  split_contig_ids=splits['test_contigs']; bootstrapped = pd.concat([domains[domains['contig_id'].isin(contig_ids.split(','))]
+  for contig_ids in split_contig_ids]); bootstrapped.to_csv('hmm_discrete_bootstrapped.bgc_blast.csv',
+  index=False);"
+deps:
+- md5: 13ba6d6763f5b669dfccba31114fdcdb
+  path: hmm_discrete.bgc_blast.csv
+- md5: 610974bf312a8254daa02e22995c982c
+  path: ../../../evaluation/labelled-bootstrap/splits/splits.csv
+md5: 7b2abed258d12dbdd148e2b56c4005fd
+outs:
+- cache: true
+  md5: 3131f8bc36181f7747b5fa058e77c43b
+  path: hmm_discrete_bootstrapped.bgc_blast.csv

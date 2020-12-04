@@ -1,0 +1,11 @@
+hmm_clusterfinder.pickle
+hmm_discrete.bgc_blast.pickle
+hmm_geneborder.bgc_blast.pickle
+lstm_1epoch.bgc_blast.pickle
+2lstm-posprob-neg-3k.pickle
+128lstm-100pfamdim-8pfamiter-posweighted-neg-10k.pickle
+lstm_bootstrapped_split0.pickle
+16lstm-100pfamdim-8pfamiter-posweighted-neg-10k.pickle
+32lstm-100pfamdim-8pfamiter-posweighted-neg-10k.pickle
+/random_forest_mibig.classes.pkl
+/random_forest_mibig.activity.pkl

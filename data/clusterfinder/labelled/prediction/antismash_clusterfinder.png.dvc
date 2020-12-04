@@ -1,0 +1,11 @@
+cmd: python ../../../../bgc_detection/evaluation/prediction_roc.py --prediction antismash_clusterfinder.csv   --name
+  antismash_clusterfinder --color blue --title 'Labelled contig per-domain ROC' -o
+  antismash_clusterfinder.png
+deps:
+- md5: 0beee72b48c57267e8b801d8fb19265a
+  path: antismash_clusterfinder.csv
+md5: f0f6d880bc7c6e803d0ce07356fc2d86
+outs:
+- cache: false
+  md5: f560055a7a44c454879a717264bbdf4e
+  path: antismash_clusterfinder.png

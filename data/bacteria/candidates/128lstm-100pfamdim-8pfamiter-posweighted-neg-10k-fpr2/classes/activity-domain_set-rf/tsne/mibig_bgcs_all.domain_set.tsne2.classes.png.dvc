@@ -1,0 +1,19 @@
+cmd: python ../../../../../../../bgc_detection/similarity/group_scatter_plot.py -i
+  ../../../tsne/mibig_bgcs_all.domain_set.tsne2.csv --group ../../../unique.csv --index
+  candidate_hash --label '-' --size 1.5 --min-size 5 --size-column avg_num_proteins
+  --group ../classes.csv --label classes --alpha 0.3 --size 0 --palette CHEM_ACT --num-groups
+  15 --figure-size 15 -o mibig_bgcs_all.domain_set.tsne2.classes.png --title "RandomForest100
+  domain_set activity classification - 3k Bacteria corpus LSTM candidates t-SNE of
+  domain_set vectors"
+deps:
+- md5: c995818d46b0b3c7fd795f7515461a19
+  path: ../../../tsne/mibig_bgcs_all.domain_set.tsne2.csv
+- md5: f72cf5eca56d2c17f67e98e544abaaae
+  path: ../classes.csv
+- md5: 21e59f6d641bc50f84cea2fdccc7e7dd
+  path: ../../../unique.csv
+md5: 5f6712be1a467ed2f31287d14bad8a21
+outs:
+- cache: false
+  md5: 35f51ee39e0c2af0bbc71ec21f38337a
+  path: mibig_bgcs_all.domain_set.tsne2.classes.png

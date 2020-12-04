@@ -1,0 +1,19 @@
+cmd: python ../../../../../bgc_detection/similarity/group_scatter_plot.py -i mibig_bgcs_all.positive_similarity.tsne2.csv
+  --palette PRODUCT_CLASS --figure-size 15 --num-groups 10 --group ../unique.csv --index
+  candidate_hash --label Candidate --size 1.5 --min-size 3 --size-column avg_num_proteins
+  --marker x --alpha 0.2 --group ../../../../mibig/mibig_properties.csv --label classes
+  --marker o --alpha 0.7  --size 1.5 --min-size 3 --size-column num_proteins -o mibig_bgcs_all.positive_similarity.tsne2.pos-classes.png
+  --title "3k Bacteria corpus LSTM candidates & MIBiG Positives t-SNE using Levenshtein
+  sequence similarity with MIBiG Positives"
+deps:
+- md5: c601fa09bb0473e69d5661444b60ea32
+  path: mibig_bgcs_all.positive_similarity.tsne2.csv
+- md5: 21e59f6d641bc50f84cea2fdccc7e7dd
+  path: ../unique.csv
+- md5: b387bee30197f4c802ad65d632539b5d
+  path: ../../../../mibig/mibig_properties.csv
+md5: 66be6eca03957beeb5dee6d990750efc
+outs:
+- cache: false
+  md5: e33145b11bda6e6c3c4d23dc26b8e65d
+  path: mibig_bgcs_all.positive_similarity.tsne2.pos-classes.png

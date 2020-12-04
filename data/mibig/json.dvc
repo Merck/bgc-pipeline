@@ -1,0 +1,8 @@
+cmd: wget https://mibig.secondarymetabolites.org/mibig_json_1.3.tar.gz && mkdir json
+  && tar -xzvf mibig_json_1.3.tar.gz --directory json && rm mibig_json_1.3.tar.gz;
+locked: true
+md5: 2823a94194fbc5685f04da906f5931a7
+outs:
+- cache: true
+  md5: 02ed96526cc2ece1112a1f8b3ae309ba.dir
+  path: json

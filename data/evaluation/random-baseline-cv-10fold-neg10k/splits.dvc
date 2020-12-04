@@ -1,0 +1,13 @@
+cmd: python ../../../bgc_detection/evaluation/cv_split.py --maxevalue 0.01 --random-seed
+  0 --folds 10 --output splits ../../training/positive/mibig_bgcs_all.csv ../../training/negative/geneswap_negatives.csv
+  --randomize-label-column in_cluster
+deps:
+- md5: 21a812171cc32d499ea67f8057cc6cb5
+  path: ../../training/negative/geneswap_negatives.csv
+- md5: f33cf6af1aa1c9423a4057a48f0f99ff
+  path: ../../training/positive/mibig_bgcs_all.csv
+md5: c424478899921e18f6f1e01106198b3b
+outs:
+- cache: true
+  md5: 129197c31cf8720e32540e813cc6d3c3.dir
+  path: splits

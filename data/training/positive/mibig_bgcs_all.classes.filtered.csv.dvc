@@ -1,0 +1,11 @@
+cmd: python -c "import pandas as pd; import numpy as np; df = pd.read_csv('mibig_bgcs_all.classes.csv');
+  df[~df['?'].astype(np.bool)].drop(['?','Nucleoside'], axis=1).to_csv('mibig_bgcs_all.classes.filtered.csv',
+  index=False)"
+deps:
+- md5: 1f4c5d2f2622adb0b77445e8a2860e31
+  path: mibig_bgcs_all.classes.csv
+md5: d87aac4156d672641efd8aab32dc60e7
+outs:
+- cache: true
+  md5: 8433b4da5c215729175f62f294363416
+  path: mibig_bgcs_all.classes.filtered.csv

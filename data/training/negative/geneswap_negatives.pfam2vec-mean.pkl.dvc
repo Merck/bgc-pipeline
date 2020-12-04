@@ -1,0 +1,12 @@
+cmd: python ../../../bgc_detection/similarity/pfam2vec_mean_vectors.py -p ../../features/pfam2vec-experiments/pfam2vec_top.bin
+  -i geneswap_negatives.csv -o geneswap_negatives.pfam2vec-mean.pkl
+deps:
+- md5: 21a812171cc32d499ea67f8057cc6cb5
+  path: geneswap_negatives.csv
+- md5: 14d44cc2bf981f0bcde26bbc36516b60
+  path: ../../features/pfam2vec-experiments/pfam2vec_top.bin
+md5: 89c558c69e64b91bdc6231d8d6a83a1f
+outs:
+- cache: true
+  md5: 85630195292f2761f51f7575ac32aa37
+  path: geneswap_negatives.pfam2vec-mean.pkl

@@ -1,0 +1,8 @@
+splits
+16lstm-100pfamdim-8pfamiter-posweighted
+32lstm-100pfamdim-8pfamiter-posweighted
+128lstm-100pfamdim-8pfamiter-posweighted
+hmm_discrete
+hmm_geneborder
+/128lstm-100pfamdim-8pfamiter-posweighted
+/hmm_discrete

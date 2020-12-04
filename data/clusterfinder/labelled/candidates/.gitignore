@@ -1,0 +1,11 @@
+antismash_default.csv
+true_output.csv
+hmm_clusterfinder.pfam27-t0.40.postproc.csv
+hmm_clusterfinder.pfam27-t0.40.raw.csv
+lstm_250epochs.bgc_blast-t0.50.postproc.csv
+lstm_250epochs.bgc_blast-t0.50.raw.csv
+lstm_bootstrapped_split0-t0.50.raw.csv
+lstm_bootstrapped_split0-t0.50.postproc.csv
+antismash_clusterfinder-t0.40.postproc.csv
+antismash_clusterfinder-t0.40.raw.csv
+clusterfinder_default.csv

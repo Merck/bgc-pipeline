@@ -1,0 +1,10 @@
+{
+  "label": "HMM ClusterFinder",
+  "color": "blue",
+  "type": "ClusterFinderHMM",
+  "input_params" : {
+  },
+  "fit_params" : {
+    "param_dir": "../../clusterfinder/model/"
+  }
+}

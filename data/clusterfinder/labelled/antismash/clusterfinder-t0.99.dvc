@@ -1,0 +1,13 @@
+cmd: mkdir -p clusterfinder-t0.99 && antismash ../CF_labelled_contigs.gbk --debug
+  --cf_cdsnr 1 --cf_npfams 0 --cf_threshold 0.99 --inclusive --minimal --outputfolder
+  clusterfinder-t0.99 2>&1 | tee clusterfinder-t0.99.log
+deps:
+- md5: 85776cff19ab023ad81af7ba4ca653eb
+  path: ../CF_labelled_contigs.gbk
+outs:
+- cache: true
+  md5: 8dd663659cee57f565c4b0038dfb54ff.dir
+  path: clusterfinder-t0.99
+- cache: true
+  md5: f0c6b9f495c1205366235424ec2356a9
+  path: clusterfinder-t0.99.log

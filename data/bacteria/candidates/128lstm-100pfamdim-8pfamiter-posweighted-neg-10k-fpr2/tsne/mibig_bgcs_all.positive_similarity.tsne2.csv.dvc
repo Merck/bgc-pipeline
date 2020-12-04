@@ -1,0 +1,13 @@
+cmd: python ../../../../../bgc_detection/similarity/dim_reduction_matrix.py -i ../../../../training/positive/mibig_bgcs_all.sequence_similarity.csv
+  -i ../positive_similarity.csv -o mibig_bgcs_all.positive_similarity.tsne2.csv --metric
+  cosine
+deps:
+- md5: f4ec89ea1048e4cd567cf91c01dee36a
+  path: ../../../../training/positive/mibig_bgcs_all.sequence_similarity.csv
+- md5: cb9698bc51f7a693b0eef841b611ead4
+  path: ../positive_similarity.csv
+md5: 45ae4319256be945d3adc62ecb47fd4e
+outs:
+- cache: true
+  md5: c601fa09bb0473e69d5661444b60ea32
+  path: mibig_bgcs_all.positive_similarity.tsne2.csv

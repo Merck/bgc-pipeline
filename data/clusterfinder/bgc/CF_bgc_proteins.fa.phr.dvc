@@ -1,0 +1,15 @@
+cmd: makeblastdb -in CF_bgc_proteins.fa -dbtype prot
+deps:
+- md5: 0b899ebd467436ae3965f9d6c815555b
+  path: CF_bgc_proteins.fa
+md5: 01a843c4c521f60b9e3d47a608cfcf8c
+outs:
+- cache: true
+  md5: 039e16e759397291e31f35f340fa45be
+  path: CF_bgc_proteins.fa.phr
+- cache: true
+  md5: 198283a57dd198682d428a81367bc84d
+  path: CF_bgc_proteins.fa.pin
+- cache: true
+  md5: b134bccd0e4f9fb24d4e7cb3551b3863
+  path: CF_bgc_proteins.fa.psq

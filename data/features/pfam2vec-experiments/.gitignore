@@ -1,0 +1,6 @@
+pfam2vec_corpus-1e-02_skipgram_100dim_5win_10iter.bin
+pfam2vec_top.csv
+pfam2vec_top.bin
+pfam2vec_top.pfam27.bin
+pfam2vec_untrained.bin
+pfam2vec_untrained.csv

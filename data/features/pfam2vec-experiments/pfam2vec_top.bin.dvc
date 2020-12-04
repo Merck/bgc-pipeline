@@ -1,0 +1,9 @@
+cmd: cp iterations/pfam2vec_corpus-1e-02_skipgram_100dim_5win_8iter.bin pfam2vec_top.bin
+deps:
+- md5: 14d44cc2bf981f0bcde26bbc36516b60
+  path: iterations/pfam2vec_corpus-1e-02_skipgram_100dim_5win_8iter.bin
+md5: 595d8da6fbcedc1f619031387bb2495d
+outs:
+- cache: true
+  md5: 14d44cc2bf981f0bcde26bbc36516b60
+  path: pfam2vec_top.bin

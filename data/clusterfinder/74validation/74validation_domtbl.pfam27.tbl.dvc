@@ -1,0 +1,11 @@
+cmd: hmmscan --domtblout 74validation_domtbl.pfam27.tbl ../../pfam/Pfam-A.27.hmm 74validation_proteins.fa
+deps:
+- md5: 6ccca6fc110558a880b057028c944a1c
+  path: 74validation_proteins.fa
+- md5: 4bbbd0105827633e4933e344bfe0e92f
+  path: ../../pfam/Pfam-A.27.hmm
+md5: 86829f4f99b3d8261ebafdbbbcbc0f59
+outs:
+- cache: true
+  md5: c73f3b1761a3a7cecf6f3690e33b38e6
+  path: 74validation_domtbl.pfam27.tbl

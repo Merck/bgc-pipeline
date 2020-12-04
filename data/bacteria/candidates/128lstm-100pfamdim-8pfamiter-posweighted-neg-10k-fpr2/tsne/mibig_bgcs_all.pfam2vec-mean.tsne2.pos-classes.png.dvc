@@ -1,0 +1,19 @@
+cmd: python ../../../../../bgc_detection/similarity/group_scatter_plot.py -i mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+  --palette PRODUCT_CLASS --figure-size 15 --num-groups 10 --group ../unique.csv --index
+  candidate_hash --label Candidate --size 1.5 --min-size 3 --size-column avg_num_proteins
+  --marker x --alpha 0.2 --group ../../../../mibig/mibig_properties.csv --label classes
+  --marker o --alpha 0.7  --size 1.5 --min-size 3 --size-column num_proteins -o mibig_bgcs_all.pfam2vec-mean.tsne2.pos-classes.png
+  --title "3k Bacteria corpus LSTM candidates & MIBiG Positives t-SNE of pfam2vec-mean
+  vectors"
+deps:
+- md5: eb393a1c73c98fb980f758c882022a05
+  path: mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+- md5: 21e59f6d641bc50f84cea2fdccc7e7dd
+  path: ../unique.csv
+- md5: b387bee30197f4c802ad65d632539b5d
+  path: ../../../../mibig/mibig_properties.csv
+md5: 016e0ea8cc63527815919cc726e39294
+outs:
+- cache: false
+  md5: 2c18d04245bcc6452844aee3231a5830
+  path: mibig_bgcs_all.pfam2vec-mean.tsne2.pos-classes.png

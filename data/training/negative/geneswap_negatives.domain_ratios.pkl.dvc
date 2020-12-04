@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/similarity/domain_set_vectors.py -i geneswap_negatives.csv
+  -o geneswap_negatives.domain_ratios.pkl --ratios
+deps:
+- md5: 21a812171cc32d499ea67f8057cc6cb5
+  path: geneswap_negatives.csv
+md5: 87d475e333df3073602425441ff48c25
+outs:
+- cache: true
+  md5: e1b387614e9fa225183bc344ba3045d3
+  path: geneswap_negatives.domain_ratios.pkl

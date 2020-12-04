@@ -1,0 +1,13 @@
+cmd: model=hmm_clusterfinder && mkdir -p $model && python ../../../bgc_detection/run_prediction.py
+  -m ../../models/trained/$model.pickle -d $model -e 0.01 ../domains-pfam27/* && for
+  file in $model/*.domains.csv; do mv $file ${file/.domains.csv/.csv}; done
+deps:
+- md5: 1d64da4b8458ec5478ba0822e9ff1a61
+  path: ../../models/trained/hmm_clusterfinder.pickle
+- md5: 189ab206ee3228dace7e4832b852b8bc.dir
+  path: ../domains-pfam27
+md5: cef96907b262676427bf4bb2ac438808
+outs:
+- cache: true
+  md5: b3be3c90d4eab1c68fe75916c9b747c3.dir
+  path: hmm_clusterfinder

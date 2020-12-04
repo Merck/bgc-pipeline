@@ -1,0 +1,12 @@
+cmd: head -1 genome/*.fa | grep '|' | cut -d'|' -f 3 | cut -d_ -f2- | cut -d, -f1
+  > tmp_species.txt && head -1 genome/*.fa | grep '|' | cut -d'|' -f 3 | cut -d_ -f1
+  > tmp_ids.txt && echo -e 'contig_id\tspecies' > species.tsv && paste tmp_ids.txt
+  tmp_species.txt >> species.tsv && rm tmp_species.txt tmp_ids.txt
+deps:
+- md5: efb021f97f26301453d2435c9064e83c.dir
+  path: genome
+md5: 7674709b78086459c6a418973ec04bba
+outs:
+- cache: true
+  md5: 89c4a102dd1a7fc2e7e628a4162c9320
+  path: species.tsv

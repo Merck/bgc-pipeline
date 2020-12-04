@@ -1,0 +1,14 @@
+cmd: mkdir -p domtbl;
+  for file in proteins/*.proteins.fa; do
+    prefix=${file/.proteins.fa/};
+    ../../bgc_detection/sub.sh hmmscan --domtblout ${prefix/proteins/domtbl}.domtbl.tbl ../pfam/Pfam-A.hmm $file;
+  done;
+deps:
+- md5: 79a3328e4c95b13949a4489b19959fc5
+  path: ../pfam/Pfam-A.hmm
+- md5: b49cec036a1b133fc123c71712fc4ab4.dir
+  path: proteins
+outs:
+- cache: true
+  md5: 75ca03fac0753c8b3cd9b215ee785f81.dir
+  path: domtbl

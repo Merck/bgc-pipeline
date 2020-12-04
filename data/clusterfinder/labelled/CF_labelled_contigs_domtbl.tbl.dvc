@@ -1,0 +1,11 @@
+cmd: ../../../bgc_detection/sub.sh hmmscan --domtblout CF_labelled_contigs_domtbl.tbl
+  ../../pfam/Pfam-A.hmm CF_labelled_contigs_proteins.fa
+deps:
+- md5: 58d14cdc5472c187d8a9f018b67b9adf
+  path: CF_labelled_contigs_proteins.fa
+- md5: 79a3328e4c95b13949a4489b19959fc5
+  path: ../../pfam/Pfam-A.hmm
+outs:
+- cache: true
+  md5: d1a9a5c7f4895a910e1d8bce4298c4c0
+  path: CF_labelled_contigs_domtbl.tbl

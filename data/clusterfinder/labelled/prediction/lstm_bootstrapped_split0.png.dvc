@@ -1,0 +1,11 @@
+cmd: python ../../../../bgc_detection/evaluation/prediction_roc.py --prediction lstm_bootstrapped_split0.csv   --name
+  lstm_bootstrapped_split0 --color green --title 'Labelled contig per-domain ROC'
+  -o lstm_bootstrapped_split0.png
+deps:
+- md5: 9ef225c6843bc72cc37740f2d3d8038b
+  path: lstm_bootstrapped_split0.csv
+md5: 2ef748ec15601d8b098162157f8af03e
+outs:
+- cache: false
+  md5: 2ce81f1109d8ab4ee5008a8cdc1fd069
+  path: lstm_bootstrapped_split0.png

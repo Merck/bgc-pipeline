@@ -1,0 +1,13 @@
+cmd: python ../../../bgc_detection/similarity/dim_reduction_matrix.py -i ../positive/mibig_bgcs_all.domain_ratios.pkl
+  -i ../negative/geneswap_negatives.domain_ratios.pkl -o geneswap_negatives-mibig_bgcs_all.domain_ratios.tsne2.csv
+  --metric cosine
+deps:
+- md5: d8011b767af7ea46a858a41c599c3b50
+  path: ../positive/mibig_bgcs_all.domain_ratios.pkl
+- md5: e1b387614e9fa225183bc344ba3045d3
+  path: ../negative/geneswap_negatives.domain_ratios.pkl
+md5: c4ebb9989309e63b22964caf3fb554f8
+outs:
+- cache: true
+  md5: 5e3f79c93ca2f5bca1d3254eac0b6ea4
+  path: geneswap_negatives-mibig_bgcs_all.domain_ratios.tsne2.csv

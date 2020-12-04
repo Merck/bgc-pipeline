@@ -1,0 +1,12 @@
+cmd: python ../../../bgc_detection/similarity/sequence_similarity_matrix.py -c ../positive/mibig_bgcs_all.csv
+  -o geneswap_negatives.positive_similarity.csv geneswap_negatives.csv
+deps:
+- md5: 21a812171cc32d499ea67f8057cc6cb5
+  path: geneswap_negatives.csv
+- md5: f33cf6af1aa1c9423a4057a48f0f99ff
+  path: ../positive/mibig_bgcs_all.csv
+md5: 47219d23a6dfc54c2f29bb8a342cb456
+outs:
+- cache: true
+  md5: 51beefc0692428cdf93cdc500e2aa6f2
+  path: geneswap_negatives.positive_similarity.csv

@@ -1,0 +1,9 @@
+cmd: ../../bgc_detection/antismash/antismash_db_export.sh <<< "`ls genome/ | cut -c -5
+  | sort | uniq`" > antismash_export.tsv
+deps:
+- md5: efb021f97f26301453d2435c9064e83c.dir
+  path: genome
+outs:
+- cache: true
+  md5: 0587bf1fd838956bb7b3bacbedf29888
+  path: antismash_export.tsv

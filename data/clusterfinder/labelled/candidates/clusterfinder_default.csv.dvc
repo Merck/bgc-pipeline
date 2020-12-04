@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/antismash/antismash_candidates.py -i ../antismash/clusterfinder-default/CM000950.1.final.gbk
+  -o clusterfinder_default.csv
+deps:
+- md5: b66cab10059a318cd331767242284529
+  path: ../antismash/clusterfinder-default/CM000950.1.final.gbk
+md5: 22cf21d8a82f7b5e8c93fb9fb3e8f445
+outs:
+- cache: true
+  md5: f8ed8f02b213db61686e9d5aa2a569ea
+  path: clusterfinder_default.csv

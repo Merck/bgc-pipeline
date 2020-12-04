@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/similarity/dim_reduction_matrix.py -i ../pfam2vec_untrained.csv
+  --index pfam_id -o pfam2vec_untrained.tsne2.csv --metric cosine
+deps:
+- md5: ec84322518b375ea5c9c37b8ce90bf6d
+  path: ../pfam2vec_untrained.csv
+md5: d5939aa21bc80891e3c217ffaf6c486c
+outs:
+- cache: true
+  md5: ef758ada329cd15aff3a498cdb957db7
+  path: pfam2vec_untrained.tsne2.csv

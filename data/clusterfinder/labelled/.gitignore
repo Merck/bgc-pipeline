@@ -1,0 +1,16 @@
+genome
+proteins
+domtbl-pfam27
+domtbl
+domains
+domains-pfam27
+CF_labelled_contigs.gbk
+CF_labelled_proteins.fa
+CF_labelled_contigs.proteins.fa
+CF_labelled_contigs_proteins.fa
+CF_labelled_contigs_domains.csv
+CF_labelled_contigs_domains.pfam27.csv
+CF_labelled_contigs_domtbl.tbl
+CF_labelled_contigs_domtbl.pfam27.tbl
+74validation_domains.csv
+CF_labelled_contigs_clusterfinder_input.tsv

@@ -1,0 +1,10 @@
+cmd: cp ../../evaluation/labelled-bootstrap/models/128lstm-100pfamdim-8pfamiter-16.415posweight-neg-10k/model0.pickle
+  lstm_bootstrapped_split0.pickle
+deps:
+- md5: 2efdbeaff3957b3522682d51e8a95064
+  path: ../../evaluation/labelled-bootstrap/models/128lstm-100pfamdim-8pfamiter-16.415posweight-neg-10k/model0.pickle
+md5: dbcb38aa3e3e7c8aab4516d7b71d63d6
+outs:
+- cache: true
+  md5: 2efdbeaff3957b3522682d51e8a95064
+  path: lstm_bootstrapped_split0.pickle

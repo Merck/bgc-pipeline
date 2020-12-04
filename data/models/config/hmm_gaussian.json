@@ -1,0 +1,22 @@
+{
+  "label": "HMM Gaussian",
+  "color": "orange",
+  "type": "GaussianHMM",
+  "build_params": {
+    "num_pos_means": 20,
+    "num_neg_means": 1
+  },
+  "fit_params" : {
+    "verbose": 1,
+    "startprob": [0.77494542, 0.22505458],
+    "transmat": [[0.98370393, 0.01629607], [0.05610907, 0.94389093]]
+  },
+  "input_params" : {
+    "features": [
+      {
+        "type": "Pfam2VecTransformer",
+        "vector_path": "{BASE_PATH}/../../features/pfam2vec/pfam2vec_corpus-1e-02_skipgram_50dim.bin"
+      }
+    ]
+  }
+}

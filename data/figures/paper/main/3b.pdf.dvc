@@ -1,0 +1,18 @@
+cmd: python ../../../../bgc_detection/evaluation/prediction_precision_recall.py --prediction
+  ../../../clusterfinder/labelled/prediction/antismash_clusterfinder.csv --name ""
+  --color blue --prediction ../../../clusterfinder/labelled/prediction/hmm_discrete.bgc_blast.csv
+  --name "" --color green --prediction ../../../clusterfinder/labelled/prediction/lstm_bootstrapped.csv
+  --name "" --color red --title "Labelled contig per-domain Precision-Recall" -o 3b.pdf
+  --size 3
+deps:
+- md5: 0beee72b48c57267e8b801d8fb19265a
+  path: ../../../clusterfinder/labelled/prediction/antismash_clusterfinder.csv
+- md5: 13ba6d6763f5b669dfccba31114fdcdb
+  path: ../../../clusterfinder/labelled/prediction/hmm_discrete.bgc_blast.csv
+- md5: d415833cc095740d8669f2bbe112350b
+  path: ../../../clusterfinder/labelled/prediction/lstm_bootstrapped.csv
+md5: 2a07bad03c75be648b4b3322b37b66ec
+outs:
+- cache: false
+  md5: 2fa47613d274396eb883d932286aa1f3
+  path: 3b.pdf

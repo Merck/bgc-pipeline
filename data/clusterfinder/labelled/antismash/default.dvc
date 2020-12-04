@@ -1,0 +1,12 @@
+cmd: mkdir -p default && antismash ../CF_labelled_contigs.gbk --debug --outputfolder
+  default 2>&1 | tee default.log
+deps:
+- md5: 85776cff19ab023ad81af7ba4ca653eb
+  path: ../CF_labelled_contigs.gbk
+outs:
+- cache: true
+  md5: 2f36524da220d5565e335da201c67149.dir
+  path: default
+- cache: true
+  md5: 9983e789b0c3ef743e9755a07b79f430
+  path: default.log

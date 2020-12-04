@@ -1,0 +1,10 @@
+cmd: ../../bgc_detection/sub.sh hmmscan --domtblout mibig_domtbl.tbl ../pfam/Pfam-A.hmm mibig_proteins.fa
+deps:
+- md5: 79a3328e4c95b13949a4489b19959fc5
+  path: ../pfam/Pfam-A.hmm
+- md5: 33fc8d95a453e52b60984c0556a72222
+  path: mibig_proteins.fa
+outs:
+- cache: true
+  md5: 904ac1f11fe016257a6dd78c011428d3
+  path: mibig_domtbl.tbl

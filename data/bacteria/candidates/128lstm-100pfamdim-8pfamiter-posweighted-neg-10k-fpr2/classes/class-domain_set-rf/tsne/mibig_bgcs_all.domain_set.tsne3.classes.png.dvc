@@ -1,0 +1,26 @@
+cmd: python ../../../../../../../bgc_detection/similarity/group_scatter_plot.py -i
+  ../../../tsne/mibig_bgcs_all.domain_set.tsne3.csv --index contig_id --group ../../../../../../mibig/mibig_properties.csv
+  --label classes --label-prefix 'MIBiG ' --marker o --alpha 0.2  --size 1 --min-size
+  10 --size-column num_proteins --group ../../../unique.csv --index candidate_hash
+  --label '-' --label-prefix '' --size 1 --min-size 10 --size-column avg_num_proteins
+  --group ../classes.csv --label classes --label-prefix 'Predicted ' --alpha 0.3 --size
+  0 --palette NOVEL_CLASS --num-groups 15 --figure-size 10 --legend 'outside best'
+  -o mibig_bgcs_all.domain_set.tsne3.classes.png --title "Novel candidates t-SNE of
+  domain_set vectors" --csv mibig_bgcs_all.domain_set.tsne3.classes.csv
+deps:
+- md5: b78c37b48393b8febaa01e7df1a00210
+  path: ../../../tsne/mibig_bgcs_all.domain_set.tsne3.csv
+- md5: b387bee30197f4c802ad65d632539b5d
+  path: ../../../../../../mibig/mibig_properties.csv
+- md5: fe9c92dcab06cc70f28da58a4923f6b2
+  path: ../classes.csv
+- md5: 21e59f6d641bc50f84cea2fdccc7e7dd
+  path: ../../../unique.csv
+md5: a991e02bf1a91befa529e36723593fda
+outs:
+- cache: false
+  md5: 6bca7c6429f50a3cc3cfdb5a83948231
+  path: mibig_bgcs_all.domain_set.tsne3.classes.png
+- cache: true
+  md5: 0dfbb33e9bab83efd7f7270dbf40d834
+  path: mibig_bgcs_all.domain_set.tsne3.classes.csv

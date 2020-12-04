@@ -1,0 +1,11 @@
+cmd: python ../../../bgc_detection/preprocessing/clusterfinder_labelled_csv.py -l
+  CF_labelled_genes.csv -i CF_labelled_contigs_domtbl.tbl -o CF_labelled_contigs_domains.csv
+deps:
+- md5: cd1f623168afbbf0cfbf204d1e88ddb0
+  path: CF_labelled_genes.csv
+- md5: d1a9a5c7f4895a910e1d8bce4298c4c0
+  path: CF_labelled_contigs_domtbl.tbl
+outs:
+- cache: true
+  md5: 1e941025645e1f81fa2390f427ea7e9a
+  path: CF_labelled_contigs_domains.csv

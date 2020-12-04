@@ -1,0 +1,15 @@
+mibig_bgcs_all-geneswap_negatives.pfam2vec-mean.tsne2.csv
+mibig_bgcs_all-geneswap_negatives.pfam2vec-quantiles.tsne2.csv
+mibig_bgcs_all.pfam2vec-quantiles.tsne2.csv
+
+geneswap_negatives-mibig_bgcs_all.positive_similarity.tsne2.csv
+geneswap_negatives-mibig_bgcs_all.domain_ratios.tsne2.csv
+mibig_bgcs_all.domain_ratios.tsne2.csv
+mibig_bgcs_all.domain_set.tsne2.csv
+mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+geneswap_negatives-mibig_bgcs_all.domain_set.tsne2.csv
+geneswap_negatives-mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+mibig_bgcs_all.sequence_similarity.tsne2.csv
+geneswap_negatives-filtered-mibig_bgcs_all.domain_set.tsne2.csv
+geneswap_negatives-filtered2-mibig_bgcs_all.domain_set.tsne2.csv
+geneswap_negatives.pp_blast-mibig_bgcs_all.pfam2vec-mean.tsne2.csv

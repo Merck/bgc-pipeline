@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/antismash/antismash_tsv_to_csv.py -i candidates.tsv
+  -o candidates.csv
+deps:
+- md5: bbe40c789c4f52c5dbc17326923cba28
+  path: candidates.tsv
+md5: 1ae834c3fe1d9077aee15988c82d108f
+outs:
+- cache: true
+  md5: 4616c5597c41b4eea96336ee17e6642e
+  path: candidates.csv

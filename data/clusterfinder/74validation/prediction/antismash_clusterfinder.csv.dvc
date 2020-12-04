@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/antismash/antismash_cf_prediction_to_csv.py
+  -i ../antismash/clusterfinder-t0.40-1bio/NC_007413.1.final.gbk -o antismash_clusterfinder.csv
+deps:
+- md5: 73e418622a4d63a562f3af6704386cd9
+  path: ../antismash/clusterfinder-t0.40-1bio/NC_007413.1.final.gbk
+md5: a64fee55d6d84610093a75ba5b9ec155
+outs:
+- cache: true
+  md5: faff6de09d61195cf050953cac4325c9
+  path: antismash_clusterfinder.csv

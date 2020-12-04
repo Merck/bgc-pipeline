@@ -1,0 +1,8 @@
+cmd: aws s3 cp s3://bgc-data/bgc-training-data/CF_labelled_contigs.gbk.gz CF_labelled_contigs.gbk.gz
+  && gunzip CF_labelled_contigs.gbk.gz
+locked: true
+md5: a98b068e3a617a429358f13f10d6bff6
+outs:
+- cache: true
+  md5: 85776cff19ab023ad81af7ba4ca653eb
+  path: CF_labelled_contigs.gbk

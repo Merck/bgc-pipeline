@@ -1,0 +1,17 @@
+cmd: ' zip mainFigures.zip 1.pdf 2.pdf 3.pdf 4.pdf 5.pdf'
+deps:
+- md5: 065df3679e5fc1fba7fbbdddab238e4f
+  path: 1.pdf
+- md5: 693398a2697b6771b9e1c6b9001739c1
+  path: 2.pdf
+- md5: ed7b0a838c1f7504e3e21eb5e8d56288
+  path: 3.pdf
+- md5: f913d401cfc77d30c18971b9882d6629
+  path: 4.pdf
+- md5: 805f82bd0408e77ccb820740f50e769b
+  path: 5.pdf
+md5: abe85ed277136e342bbd160cb7a0ee14
+outs:
+- cache: false
+  md5: 3b9aefabdd114ddce6df89ce50eb506d
+  path: mainFigures.zip

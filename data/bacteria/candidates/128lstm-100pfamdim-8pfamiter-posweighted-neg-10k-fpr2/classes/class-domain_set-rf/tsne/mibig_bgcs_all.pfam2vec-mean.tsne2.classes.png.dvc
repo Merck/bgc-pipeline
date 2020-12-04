@@ -1,0 +1,19 @@
+cmd: python ../../../../../../../bgc_detection/similarity/group_scatter_plot.py -i
+  ../../../tsne/mibig_bgcs_all.pfam2vec-mean.tsne2.csv --group ../../../unique.csv
+  --index candidate_hash --label '-' --size 1.5 --min-size 5 --size-column avg_num_proteins
+  --group ../classes.csv --label classes --alpha 0.3 --size 0 --palette PRODUCT_CLASS
+  --num-groups 15 --figure-size 15 -o mibig_bgcs_all.pfam2vec-mean.tsne2.classes.png
+  --title "RandomForest100 domain_set product classification - 3k Bacteria corpus
+  LSTM candidates t-SNE of pfam2vec-mean vectors"
+deps:
+- md5: eb393a1c73c98fb980f758c882022a05
+  path: ../../../tsne/mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+- md5: fe9c92dcab06cc70f28da58a4923f6b2
+  path: ../classes.csv
+- md5: 21e59f6d641bc50f84cea2fdccc7e7dd
+  path: ../../../unique.csv
+md5: dbc904061f8064ba2ea3f936aa3f4c7e
+outs:
+- cache: false
+  md5: 854b1fa7f557e58a32818d1d2f0fd59f
+  path: mibig_bgcs_all.pfam2vec-mean.tsne2.classes.png

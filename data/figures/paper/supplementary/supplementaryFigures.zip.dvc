@@ -1,0 +1,32 @@
+cmd: ' zip supplementaryFigures.zip S1.pdf S2.pdf S3.pdf S4.pdf S5.pdf S6.pdf S7.pdf
+  S8.pdf S9.pdf S10.pdf S11.pdf S12.pdf'
+deps:
+- md5: 5749be21441f9a849cfca695d3605ae8
+  path: S1.pdf
+- md5: 8ccc08ed013ad12e31b1f0e59a345140
+  path: S2.pdf
+- md5: ff92badf1b2e64297bffa71fd9a9d32b
+  path: S3.pdf
+- md5: 6a538d52e4fe9531f96db9cd101e179c
+  path: S4.pdf
+- md5: af8388332b7e804be91684d9f90c1d5e
+  path: S5.pdf
+- md5: 30ca682f33ab1f2ca5210cc4eb72bd4a
+  path: S6.pdf
+- md5: 65c7ccf378a7471edff46104bc0988b1
+  path: S7.pdf
+- md5: 123e29c9a373e7f0030d25da2a2d969c
+  path: S8.pdf
+- md5: 6641d3663d1435193988510ea39b46d6
+  path: S9.pdf
+- md5: 04f8f8aa28d71630a188295b880efd09
+  path: S10.pdf
+- md5: 5a5332a48a46e1ceadf7d4216aa7fd4d
+  path: S11.pdf
+- md5: a0404ca3a993cde7d748a0b8614a3407
+  path: S12.pdf
+md5: c00dde1c6af52c1a655f87b46531994d
+outs:
+- cache: false
+  md5: d336367d748f3706773cc001bf13043d
+  path: supplementaryFigures.zip

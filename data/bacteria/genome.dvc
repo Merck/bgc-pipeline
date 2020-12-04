@@ -1,0 +1,8 @@
+cmd: aws s3 cp s3://bgc-data/bgc-training-data/genome.tar.gz genome.tar.gz && tar
+  -xzvf genome.tar.gz && rm genome.tar.gz
+locked: true
+md5: 3f805ccb8437edd52bc4b77494ddd297
+outs:
+- cache: true
+  md5: efb021f97f26301453d2435c9064e83c.dir
+  path: genome

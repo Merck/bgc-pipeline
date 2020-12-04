@@ -1,0 +1,5 @@
+md5: b057270145cdc650d1f1fac7dbbb7f1f
+outs:
+- cache: true
+  md5: 120939e1ea34ccb98400a07c274409ed
+  path: 74validation_contigs.gbk

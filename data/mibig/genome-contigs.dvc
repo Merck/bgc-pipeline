@@ -1,0 +1,10 @@
+cmd: python ../../bgc_detection/preprocessing/split_contigs.py --format genbank --output
+  genome-contigs genome/*.gbk
+deps:
+- md5: 7a1eb1917cae0a841c0951a0e6c5c36f.dir
+  path: genome
+md5: c28800c0d9cd6ab854ccfd3ae74d1a9a
+outs:
+- cache: true
+  md5: 8578c4256124c7f6a0186dc7b77ab985.dir
+  path: genome-contigs

@@ -1,0 +1,10 @@
+cmd: python -c "import word2vec; import pandas as pd; model=word2vec.load(\"pfam2vec_untrained.bin\");
+  ids = pd.Series(model.vocab, name=\"pfam_id\"); pd.DataFrame(model.vectors, index=ids).to_csv(\"pfam2vec_untrained.csv\")"
+deps:
+- md5: f9d627bf86df557fbad5b9c1260dd0d7
+  path: pfam2vec_untrained.bin
+md5: d6e7f7ea9a54b0d71b5544b5c09be80a
+outs:
+- cache: true
+  md5: ec84322518b375ea5c9c37b8ce90bf6d
+  path: pfam2vec_untrained.csv

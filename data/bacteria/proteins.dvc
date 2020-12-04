@@ -1,0 +1,12 @@
+cmd: for file in genome/*.genome.fa; do ../../bgc_detection/sub.sh prodigal -i $file
+  -a ${file/.genome.fa/.proteins.fa} >/dev/null;
+  done;
+  mkdir -p proteins;
+  mv genome/*.proteins.fa proteins/
+deps:
+- md5: efb021f97f26301453d2435c9064e83c.dir
+  path: genome
+outs:
+- cache: true
+  md5: b49cec036a1b133fc123c71712fc4ab4.dir
+  path: proteins

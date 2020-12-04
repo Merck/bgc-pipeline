@@ -1,0 +1,15 @@
+cmd: python ../../../bgc_detection/similarity/group_scatter_plot.py -i mibig_bgcs_all.sequence_similarity.tsne2.csv
+  --figure-size 15 --palette CHEM_ACT --num-groups 10 --group ../../mibig/mibig_compounds.csv
+  --label activity --size 80 --marker o --alpha 0.7 -o mibig_bgcs_all.sequence_similarity.tsne2.activity.png
+  --title "Activity, number of proteins - MIBiG Positives t-SNE of sequence_similarity
+  vectors" --legend "upper right"
+deps:
+- md5: f60e47e2e6481f5e057486f083a61a07
+  path: mibig_bgcs_all.sequence_similarity.tsne2.csv
+- md5: 8aae1e4a0ee3252f50c78d87976ebd21
+  path: ../../mibig/mibig_compounds.csv
+md5: a2d0e891535b911b7a78f718ef0e6e7c
+outs:
+- cache: false
+  md5: 61888826676ce3a8f6228cebc4aff529
+  path: mibig_bgcs_all.sequence_similarity.tsne2.activity.png

@@ -1,0 +1,15 @@
+cmd: python ../../../bgc_detection/samples/positive_mibig.py -i ../../mibig/mibig_domains.nobias.csv
+  -g ../../mibig/genome -o mibig_bgcs_10dom4prot.nobias -md 10 -mp 4 -e 0.01
+deps:
+- md5: b454f310f8dfba909422c6b6da804dae
+  path: ../../mibig/mibig_domains.nobias.csv
+- md5: 7a1eb1917cae0a841c0951a0e6c5c36f.dir
+  path: ../../mibig/genome
+md5: b039e0529f0e33a1c3f745df143cbf44
+outs:
+- cache: true
+  md5: cf54e25270b6e003d93573a1045f67b7
+  path: mibig_bgcs_10dom4prot.nobias.csv
+- cache: true
+  md5: be95b2a5d136b384ce734a4dd3040d3f
+  path: mibig_bgcs_10dom4prot.nobias.fa

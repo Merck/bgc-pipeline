@@ -1,0 +1,11 @@
+cmd: 'wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam31.0/Pfam-A.clans.tsv.gz
+  && python -c "import pandas as pd; df = pd.read_csv(\"Pfam-A.clans.tsv.gz\", sep=\"\\t\",
+  header=None); df.columns = [\"pfam_id\",\"clan_id\",\"foo\",\"bar\",\"description\"];
+  df[[\"pfam_id\",\"clan_id\",\"description\"]].to_csv(\"Pfam-A.clans.csv\", index=False)"
+  && rm Pfam-A.clans.tsv.gz '
+locked: true
+md5: b492718a5f36e3c1ac5ba510689eee0d
+outs:
+- cache: true
+  md5: 702512b3351cb1a4a83579b598db3a1d
+  path: Pfam-A.clans.csv

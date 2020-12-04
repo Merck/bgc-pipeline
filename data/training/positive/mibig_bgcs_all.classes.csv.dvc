@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/preprocessing/classes_to_multilabel.py -i ../../mibig/mibig_properties.csv
+  --column classes --index contig_id -o mibig_bgcs_all.classes.csv
+deps:
+- md5: b387bee30197f4c802ad65d632539b5d
+  path: ../../mibig/mibig_properties.csv
+md5: 9466da8128ac2e164dd865570ad3a4e6
+outs:
+- cache: true
+  md5: 1f4c5d2f2622adb0b77445e8a2860e31
+  path: mibig_bgcs_all.classes.csv

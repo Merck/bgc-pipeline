@@ -1,0 +1,5 @@
+md5: 8c953798af6e6b9666b51ff85891644b
+outs:
+- cache: true
+  md5: b040873b95861045bd4849c085558d89.dir
+  path: 128lstm-0.001lr-100random-16.415posweight-neg-10k

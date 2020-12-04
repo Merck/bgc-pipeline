@@ -1,0 +1,15 @@
+cmd: python ../../../bgc_detection/similarity/group_scatter_plot.py -i mibig_bgcs_all.domain_ratios.tsne2.csv
+  --palette PRODUCT_CLASS --figure-size 15 --num-groups 10 --group ../../mibig/mibig_properties.csv
+  --label classes --size 3 --min-size 30 --size-column num_proteins --marker o --alpha
+  0.7 -o mibig_bgcs_all.domain_ratios.tsne2.png --title "Class, number of proteins
+  - MIBiG Positives t-SNE of domain_ratios vectors" --legend "upper right"
+deps:
+- md5: 538dd3179ad8020e9b2cf54cad3f276f
+  path: mibig_bgcs_all.domain_ratios.tsne2.csv
+- md5: b387bee30197f4c802ad65d632539b5d
+  path: ../../mibig/mibig_properties.csv
+md5: 5d12888de9cc5640f784cbc13644df14
+outs:
+- cache: false
+  md5: bafbbef12912e1c863b345e6fd80c850
+  path: mibig_bgcs_all.domain_ratios.tsne2.png

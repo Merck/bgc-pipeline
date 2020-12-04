@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/features/pfam_corpus.py -i ../domains -o corpus-1e-02.txt
+  -e 0.01
+deps:
+- md5: 189ab206ee3228dace7e4832b852b8bc.dir
+  path: ../domains
+md5: 827df3e23e5bf9d1d3546fb7961cb491
+outs:
+- cache: true
+  md5: 06e3ec71ecf2cd2ef9b1de74e0d08b4d
+  path: corpus-1e-02.txt

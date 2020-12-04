@@ -1,0 +1,13 @@
+cmd: python ../../../bgc_detection/similarity/group_scatter_plot.py -i mibig_bgcs_all.domain_set.tsne2.csv
+  --group ../positive/mibig_bgcs_all.domain_set.5means.csv --label cluster --figure-size
+  15 --size 50 -o mibig_bgcs_all.domain_set.tsne2.5means.png
+deps:
+- md5: 2064813051979838ea0c42e370680d2a
+  path: ../positive/mibig_bgcs_all.domain_set.5means.csv
+- md5: 284178b43dfe2cf1ad28ead549d71691
+  path: mibig_bgcs_all.domain_set.tsne2.csv
+md5: 473b128e1590725508c64fb5fd75224e
+outs:
+- cache: false
+  md5: 27c8d63033a5de9d8e5650bcab83d48f
+  path: mibig_bgcs_all.domain_set.tsne2.5means.png

@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/preprocessing/domtbl2clusterfinder.py -i CF_labelled_contigs_domtbl.tbl
+  -o CF_labelled_contigs_clusterfinder_input.tsv
+deps:
+- md5: d1a9a5c7f4895a910e1d8bce4298c4c0
+  path: CF_labelled_contigs_domtbl.tbl
+md5: 26312a9d33cb7d20366a2ce5751131b5
+outs:
+- cache: true
+  md5: df65ddd1be8b7667f224e962172a432b
+  path: CF_labelled_contigs_clusterfinder_input.tsv

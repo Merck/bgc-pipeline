@@ -1,0 +1,12 @@
+cmd: 'python -c "import pandas as pd; df = pd.read_csv(''../../mibig/mibig_compounds.csv'');
+  df[df[''any_known_activity'']].rename(columns={c: c.replace(''any_'','''') for c
+  in df.columns})[[''contig_id'',''antibacterial'',''cytotoxic'',''inhibitor'',''antifungal'']].to_csv(''mibig_bgcs_all.activity.csv'',
+  index=False)"'
+deps:
+- md5: 8aae1e4a0ee3252f50c78d87976ebd21
+  path: ../../mibig/mibig_compounds.csv
+md5: 224485399ac122f7f82e2e252fec5648
+outs:
+- cache: true
+  md5: c81a37ac60305ef14da9c7fff8bb6e25
+  path: mibig_bgcs_all.activity.csv

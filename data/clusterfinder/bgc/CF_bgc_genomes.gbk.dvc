@@ -1,0 +1,7 @@
+cmd: aws s3 cp s3://bgc-data/bgc-training-data/CF_bgc_genomes.gbk CF_bgc_genomes.gbk
+locked: true
+md5: 68d317380655fec69ff6eafa61602737
+outs:
+- cache: true
+  md5: e6aa0fe015a1cdc7b03f261b4c0abf19
+  path: CF_bgc_genomes.gbk

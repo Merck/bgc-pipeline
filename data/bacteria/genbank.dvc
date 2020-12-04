@@ -1,0 +1,15 @@
+cmd: python ../../bgc_detection/preprocessing/bacteria_genbank.py --input domains
+  --genome genome --output genbank --description ../pfam/Pfam-A.clans.csv --maxevalue
+  0.01
+deps:
+- md5: 189ab206ee3228dace7e4832b852b8bc.dir
+  path: domains
+- md5: efb021f97f26301453d2435c9064e83c.dir
+  path: genome
+- md5: 702512b3351cb1a4a83579b598db3a1d
+  path: ../pfam/Pfam-A.clans.csv
+md5: 6ee14d604fc9fef6f60c201f539e593f
+outs:
+- cache: true
+  md5: c5976ebd0831460374d888863d3e5e65.dir
+  path: genbank

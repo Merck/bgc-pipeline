@@ -1,0 +1,15 @@
+cmd: model=128lstm-100pfamdim-8pfamiter-posweighted-neg-10k && mkdir -p $model &&
+  python ../../../bgc_detection/run_prediction.py -m ../../models/trained/$model.pickle
+  -d $model -e 0.01 ../domains/* && for file in $model/*.domains.csv; do mv $file
+  ${file/.domains.csv/.csv}; done
+deps:
+- md5: 2c3de2e4b9c0a6ab8e0bee8f4eb6a6fb
+  path: ../../models/trained/128lstm-100pfamdim-8pfamiter-posweighted-neg-10k.pickle
+- md5: 189ab206ee3228dace7e4832b852b8bc.dir
+  path: ../domains
+md5: 13b273bbbf49b07e983c6373865d85b4
+outs:
+- cache: true
+  md5: b0768d560f5c150f0c3f73ecc7f6eef7.dir
+  path: 128lstm-100pfamdim-8pfamiter-posweighted-neg-10k
+

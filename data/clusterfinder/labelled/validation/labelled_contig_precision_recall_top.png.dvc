@@ -1,0 +1,17 @@
+cmd: python ../../../../bgc_detection/evaluation/prediction_precision_recall.py --prediction
+  ../prediction/hmm_discrete.bgc_blast.csv --name "HMM Reconstructed" --color green
+  --prediction ../prediction/hmm_geneborder.bgc_blast.csv --name "HMM GeneBorder"
+  --color purple --prediction ../prediction/lstm_bootstrapped.csv --name "LSTM (Bootstrapped)"
+  --color red --title "Labelled contig per-domain Precision-Recall" -o labelled_contig_precision_recall_top.png
+deps:
+- md5: 13ba6d6763f5b669dfccba31114fdcdb
+  path: ../prediction/hmm_discrete.bgc_blast.csv
+- md5: 38b8c651e50bb74444d46fa0c7645745
+  path: ../prediction/hmm_geneborder.bgc_blast.csv
+- md5: d415833cc095740d8669f2bbe112350b
+  path: ../prediction/lstm_bootstrapped.csv
+md5: d4ab65529d2abea99dbaa1c07149aadb
+outs:
+- cache: false
+  md5: ec5a688dca2311475c23822f1cb9b69d
+  path: labelled_contig_precision_recall_top.png

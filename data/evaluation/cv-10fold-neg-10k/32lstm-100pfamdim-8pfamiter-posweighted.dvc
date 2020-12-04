@@ -1,0 +1,5 @@
+md5: d9a01c1e0016539d12c59e308a88bf03
+outs:
+- cache: true
+  md5: 0ff960a000f651ab37a75db959779ef4.dir
+  path: 32lstm-100pfamdim-8pfamiter-posweighted

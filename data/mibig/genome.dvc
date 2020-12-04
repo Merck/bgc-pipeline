@@ -1,0 +1,8 @@
+cmd: wget https://mibig.secondarymetabolites.org/mibig_gbk_1.3.tar.gz && mkdir genome
+  && tar -xzvf mibig_gbk_1.3.tar.gz --directory genome && rm mibig_gbk_1.3.tar.gz
+locked: true
+md5: af6fb6f7e0275d938abd507fa6ce5a81
+outs:
+- cache: true
+  md5: 7a1eb1917cae0a841c0951a0e6c5c36f.dir
+  path: genome

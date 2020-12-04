@@ -1,0 +1,10 @@
+cmd: python ../../../../../bgc_detection/evaluation/confusion_matrix.py -t 'Per-domain
+  confusion matrix' -o antismash_clusterfinder-fpr10.png --fpr 0.10 ../../prediction/antismash_clusterfinder.csv
+deps:
+- md5: 0beee72b48c57267e8b801d8fb19265a
+  path: ../../prediction/antismash_clusterfinder.csv
+md5: 0a2229ca151c0a498c991054dab23189
+outs:
+- cache: false
+  md5: e45ef38e024ab656f17944df5018d44a
+  path: antismash_clusterfinder-fpr10.png

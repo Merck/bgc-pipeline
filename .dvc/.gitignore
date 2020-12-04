@@ -1,0 +1,16 @@
+cache
+state
+lock
+link.state
+link.state.lock
+state.lock
+config.local
+updater
+/state
+/lock
+/config.local
+/updater
+/updater.lock
+/state-journal
+/state-wal
+/cache

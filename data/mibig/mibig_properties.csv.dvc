@@ -1,0 +1,12 @@
+cmd: python ../../bgc_detection/preprocessing/mibig_properties.py -g genome -j json
+  -o mibig_properties.csv
+deps:
+- md5: 7a1eb1917cae0a841c0951a0e6c5c36f.dir
+  path: genome
+- md5: 02ed96526cc2ece1112a1f8b3ae309ba.dir
+  path: json
+md5: 576c925d05ceac68015ea0fc1db24625
+outs:
+- cache: true
+  md5: b387bee30197f4c802ad65d632539b5d
+  path: mibig_properties.csv

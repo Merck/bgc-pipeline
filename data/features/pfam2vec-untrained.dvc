@@ -1,0 +1,5 @@
+md5: 9004e9dd84d04424a6b7da7d81440a05
+outs:
+- cache: true
+  md5: 653f0605d4b3b8a58e42df531291a73b.dir
+  path: pfam2vec-untrained

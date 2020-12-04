@@ -1,0 +1,19 @@
+cmd: python ../../../bgc_detection/similarity/group_scatter_plot.py -i geneswap_negatives-mibig_bgcs_all.positive_similarity.tsne2.csv
+  --palette PRODUCT_CLASS --figure-size 15 --num-groups 10 --legend 'upper right'
+  --group ../negative/geneswap_negatives.csv --label Geneswap_Negative --marker +
+  --alpha 0.4 --size 50 --group ../../mibig/mibig_properties.csv --label classes --marker
+  o --alpha 0.5 --size 60 -o geneswap_negatives-mibig_bgcs_all.positive_similarity.tsne2.png
+  --title "MIBiG Pos & GeneSwap Neg t-SNE using Levenshtein pfam sequence similarity"
+  --legend "upper right"
+deps:
+- md5: 27eb89cb60888c5b6900838a63518c95
+  path: geneswap_negatives-mibig_bgcs_all.positive_similarity.tsne2.csv
+- md5: 21a812171cc32d499ea67f8057cc6cb5
+  path: ../negative/geneswap_negatives.csv
+- md5: b387bee30197f4c802ad65d632539b5d
+  path: ../../mibig/mibig_properties.csv
+md5: df0d957540ca4cc16653c6c7cab61289
+outs:
+- cache: false
+  md5: 05ee37ce9cd50ab605c8de3730ce6b37
+  path: geneswap_negatives-mibig_bgcs_all.positive_similarity.tsne2.png

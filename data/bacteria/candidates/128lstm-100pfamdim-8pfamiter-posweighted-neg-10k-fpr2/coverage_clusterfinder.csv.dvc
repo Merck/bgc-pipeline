@@ -1,0 +1,12 @@
+cmd: python ../../../../bgc_detection/candidates/candidate_coverage.py -i candidates.csv
+  -o coverage_clusterfinder.csv ../antismash-clusterfinder/candidates.csv
+deps:
+- md5: b47261b9e1928322367a3ce31337f054
+  path: candidates.csv
+- md5: abd9951381aa8e3f669cfae75b902032
+  path: ../antismash-clusterfinder/candidates.csv
+md5: 29c9809fed6a1660eb13b6f781ce2a7c
+outs:
+- cache: true
+  md5: 8413bc964439d49106b54640d250a1f4
+  path: coverage_clusterfinder.csv

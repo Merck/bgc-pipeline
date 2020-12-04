@@ -1,0 +1,10 @@
+cmd: python ../../../../bgc_detection/features/pfam2vec.py -i ../../../bacteria/corpus/corpus-1e-02.txt
+  --method skipgram --dimensions 200 --window 5 --iter 64 -o .
+deps:
+- md5: 06e3ec71ecf2cd2ef9b1de74e0d08b4d
+  path: ../../../bacteria/corpus/corpus-1e-02.txt
+md5: ad8ba3bae62ae8ce282e7f211a4fc808
+outs:
+- cache: true
+  md5: a31a3720f99f6f9ba850d49a6a38d79b
+  path: pfam2vec_corpus-1e-02_skipgram_200dim_5win_64iter.bin

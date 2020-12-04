@@ -1,0 +1,13 @@
+cmd: python ../../../../bgc_detection/similarity/group_scatter_plot.py -i pfam2vec_top.tsne2.csv
+  -o pfam2vec_top.tsne2.clans.png --group ../../../pfam/Pfam-A.clans.csv --index pfam_id
+  --label clan_id --num-groups 10 --figure-size 10
+deps:
+- md5: 05f47a3b16b665eec6a7bf77e6025e3e
+  path: pfam2vec_top.tsne2.csv
+- md5: 702512b3351cb1a4a83579b598db3a1d
+  path: ../../../pfam/Pfam-A.clans.csv
+md5: ce92bf85bc8e2d9f9312d65c95411cd3
+outs:
+- cache: false
+  md5: 7bcee134df660fa600b6588005ca8cf6
+  path: pfam2vec_top.tsne2.clans.png

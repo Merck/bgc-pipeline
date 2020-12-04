@@ -1,0 +1,18 @@
+cmd: python ../../../../../bgc_detection/similarity/group_scatter_plot.py -i mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+  --figure-size 15 --num-groups 10 --group ../unique.csv --index candidate_hash --label
+  Candidate --size 1.5 --min-size 5 --size-column avg_num_proteins --alpha 0.3 --group
+  ../novel.csv --index candidate_hash --size 0 --label Novel_Candidates -o mibig_bgcs_all.pfam2vec-mean.tsne2.novel.png
+  --title "Novel candidates - 3k Bacteria corpus LSTM candidates t-SNE of pfam2vec-mean
+  vectors"
+deps:
+- md5: eb393a1c73c98fb980f758c882022a05
+  path: mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+- md5: 21e59f6d641bc50f84cea2fdccc7e7dd
+  path: ../unique.csv
+- md5: c501a9d66dad7ff3aec15ee9a3b8c4ab
+  path: ../novel.csv
+md5: 59045a1503ceac56d1f6a15d4daa7b40
+outs:
+- cache: false
+  md5: 22339f5619788256029d4060bfc9ad1d
+  path: mibig_bgcs_all.pfam2vec-mean.tsne2.novel.png

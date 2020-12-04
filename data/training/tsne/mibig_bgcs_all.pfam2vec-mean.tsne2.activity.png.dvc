@@ -1,0 +1,15 @@
+cmd: python ../../../bgc_detection/similarity/group_scatter_plot.py -i mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+  --figure-size 15 --palette CHEM_ACT --num-groups 10 --group ../../mibig/mibig_compounds.csv
+  --label activity --size 80 --marker o --alpha 0.7 -o mibig_bgcs_all.pfam2vec-mean.tsne2.activity.png
+  --title "Activity, number of proteins - MIBiG Positives t-SNE of pfam2vec-mean vectors"
+  --legend "upper right"
+deps:
+- md5: 3fd60c58355c501b4a0e20c1a506b097
+  path: mibig_bgcs_all.pfam2vec-mean.tsne2.csv
+- md5: 8aae1e4a0ee3252f50c78d87976ebd21
+  path: ../../mibig/mibig_compounds.csv
+md5: 3d801fe9beb37860f6ad6e0b1dd05632
+outs:
+- cache: false
+  md5: d7d4830b263af89d9d8d685c786b2759
+  path: mibig_bgcs_all.pfam2vec-mean.tsne2.activity.png

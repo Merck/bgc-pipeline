@@ -1,0 +1,12 @@
+cmd: python ../../../../bgc_detection/similarity/pfam2vec_mean_vectors.py -p ../../../features/pfam2vec-experiments/pfam2vec_top.bin
+  -i domains.csv -o pfam2vec-mean.pkl
+deps:
+- md5: eb82e1ea651dd0fdc764b49bdff980b4
+  path: domains.csv
+- md5: 14d44cc2bf981f0bcde26bbc36516b60
+  path: ../../../features/pfam2vec-experiments/pfam2vec_top.bin
+md5: 36efc3a7838e88b3b340aa69ba995ce4
+outs:
+- cache: true
+  md5: 7dda76d91d6f1744323201d350411c1b
+  path: pfam2vec-mean.pkl

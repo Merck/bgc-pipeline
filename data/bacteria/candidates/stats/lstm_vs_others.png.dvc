@@ -1,0 +1,19 @@
+cmd: python ../../../../bgc_detection/candidates/candidate_stats.py --candidates ../antismash-export/candidates.csv
+  --label AntiSMASH_Export --candidates ../antismash-clusterfinder/candidates.csv
+  --label AntiSMASH_ClusterFinder --candidates ../antismash-minimal/candidates.csv
+  --label AntiSMASH_RuleBased --candidates ../128lstm-100pfamdim-8pfamiter-posweighted-neg-10k-fpr2/candidates.csv
+  --label DeepBGC -o lstm_vs_others.png
+deps:
+- md5: fec0fc0068f6a21bf5a8da46738b1015
+  path: ../antismash-export/candidates.csv
+- md5: abd9951381aa8e3f669cfae75b902032
+  path: ../antismash-clusterfinder/candidates.csv
+- md5: 4616c5597c41b4eea96336ee17e6642e
+  path: ../antismash-minimal/candidates.csv
+- md5: b47261b9e1928322367a3ce31337f054
+  path: ../128lstm-100pfamdim-8pfamiter-posweighted-neg-10k-fpr2/candidates.csv
+md5: 0ebf6fe8e41797f2c53737cca2c7a013
+outs:
+- cache: false
+  md5: f8f3745c463e728dfc511b25f0974efc
+  path: lstm_vs_others.png

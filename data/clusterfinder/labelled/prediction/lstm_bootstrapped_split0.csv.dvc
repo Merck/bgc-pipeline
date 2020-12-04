@@ -1,0 +1,12 @@
+cmd: python ../../../../bgc_detection/run_prediction.py -m ../../../models/trained/lstm_bootstrapped_split0.pickle
+  -o lstm_bootstrapped_split0.csv -e 0.01 ../CF_labelled_contigs_domains.csv
+deps:
+- md5: 2efdbeaff3957b3522682d51e8a95064
+  path: ../../../models/trained/lstm_bootstrapped_split0.pickle
+- md5: 1e941025645e1f81fa2390f427ea7e9a
+  path: ../CF_labelled_contigs_domains.csv
+md5: f3fe21774c661e2553d828a8994e456e
+outs:
+- cache: true
+  md5: 9ef225c6843bc72cc37740f2d3d8038b
+  path: lstm_bootstrapped_split0.csv

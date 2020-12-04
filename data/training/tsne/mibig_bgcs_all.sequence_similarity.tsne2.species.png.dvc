@@ -1,0 +1,16 @@
+cmd: python ../../../bgc_detection/similarity/group_scatter_plot.py -i mibig_bgcs_all.sequence_similarity.tsne2.csv
+  --figure-size 15 --num-groups 12 --group ../../mibig/mibig_properties.csv --label
+  species --size 3 --min-size 30 --size-column num_proteins --marker o --alpha 0.7
+  -o mibig_bgcs_all.sequence_similarity.tsne2.species.png --title "Species, number
+  of proteins - MIBiG Positives t-SNE using Levenshtein pfam sequence similarity"
+  --legend "upper right"
+deps:
+- md5: f60e47e2e6481f5e057486f083a61a07
+  path: mibig_bgcs_all.sequence_similarity.tsne2.csv
+- md5: b387bee30197f4c802ad65d632539b5d
+  path: ../../mibig/mibig_properties.csv
+md5: 35cc659c27b80f0ec69de083bc807096
+outs:
+- cache: false
+  md5: 1d79cac1c01e24aef23a9c4b8d920711
+  path: mibig_bgcs_all.sequence_similarity.tsne2.species.png

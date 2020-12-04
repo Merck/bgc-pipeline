@@ -1,0 +1,11 @@
+cmd: python ../../../../bgc_detection/candidates/filter_candidates.py --max-coverage
+  0 --min-domains 5 -i ../128lstm-100pfamdim-8pfamiter-posweighted-neg-10k-fpr2/coverage.csv
+  -o candidates.csv
+deps:
+- md5: 5c2f5b3d2c5963c69298459fa3eb0eab
+  path: ../128lstm-100pfamdim-8pfamiter-posweighted-neg-10k-fpr2/coverage.csv
+md5: 1007ded468848910311200f96f11cf60
+outs:
+- cache: true
+  md5: 67e64d9f67eeaab1c0bccd15f44c422d
+  path: candidates.csv

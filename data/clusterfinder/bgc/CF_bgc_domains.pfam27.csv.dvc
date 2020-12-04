@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/preprocessing/domtbl2csv.py -i CF_bgc_domtbl.pfam27.tbl
+  -f proteins2fasta -o CF_bgc_domains.pfam27.csv
+deps:
+- md5: 2dcd72e26ffdd127ebda5820d749068a
+  path: CF_bgc_domtbl.pfam27.tbl
+md5: 25b15fbe693be4a3897aeb7824bd0e8f
+outs:
+- cache: true
+  md5: 88b9ccaeffd9a6fa24b5ef4a196b24ef
+  path: CF_bgc_domains.pfam27.csv

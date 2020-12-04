@@ -1,0 +1,10 @@
+cmd: cp ../pfam2vec-pfam27/pfam2vec_corpus-1e-02.pfam27_skipgram_100dim_5win_5iter.bin
+  pfam2vec_top.pfam27.bin
+deps:
+- md5: 054a4a9fcef40aab5ef1604cc9ae9739
+  path: ../pfam2vec-pfam27/pfam2vec_corpus-1e-02.pfam27_skipgram_100dim_5win_5iter.bin
+md5: ade701e231f7e1e2b63af4cc05c3a9b0
+outs:
+- cache: true
+  md5: 054a4a9fcef40aab5ef1604cc9ae9739
+  path: pfam2vec_top.pfam27.bin

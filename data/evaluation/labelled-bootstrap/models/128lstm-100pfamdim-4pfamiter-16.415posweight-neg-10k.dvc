@@ -1,0 +1,5 @@
+md5: 56e707b2c2248e2510184e442114e9ae
+outs:
+- cache: true
+  md5: ac969894368fd3d25659a21c9356f55f.dir
+  path: 128lstm-100pfamdim-4pfamiter-16.415posweight-neg-10k

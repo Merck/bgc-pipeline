@@ -1,0 +1,10 @@
+cmd: python ../../../bgc_detection/preprocessing/proteins2fasta.py -i CF_labelled_contigs.gbk
+  -o CF_labelled_contigs_proteins.fa -f genbank
+deps:
+- md5: 85776cff19ab023ad81af7ba4ca653eb
+  path: CF_labelled_contigs.gbk
+md5: 75fb9a5e3e9f5b2f1a16236d1b3efc58
+outs:
+- cache: true
+  md5: 58d14cdc5472c187d8a9f018b67b9adf
+  path: CF_labelled_contigs_proteins.fa

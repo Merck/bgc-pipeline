@@ -1,0 +1,35 @@
+{
+  "type": "KerasRNN",
+  "build_params": {
+    "batch_size": 64,
+    "hidden_size": 128,
+    "stateful": true
+  },
+  "fit_params": {
+    "timesteps": 256,
+    "validation_size": 0,
+    "verbose": 1,
+    "num_epochs": 400,
+    "early_stop_monitor": "val_auc_roc",
+    "early_stop_min_delta": 0.0005,
+    "early_stop_patience": 20,
+    "early_stop_mode": "max",
+    "gpus": 0,
+    "shuffle": true,
+    "optimizer": "adam",
+    "learning_rate": 0.0001,
+    "positive_weight": POSWEIGHT
+  },
+  "input_params": {
+    "features": [
+      {
+        "type": "ProteinBorderTransformer"
+      },
+      {
+        "type": "Pfam2VecTransformer",
+        "vector_path": "../../../features/pfam2vec-experiments/iterations/pfam2vec_corpus-1e-02_skipgram_PFAMDIMdim_5win_PFAMITERiter.bin"
+      }
+    ]
+  }
+}
+

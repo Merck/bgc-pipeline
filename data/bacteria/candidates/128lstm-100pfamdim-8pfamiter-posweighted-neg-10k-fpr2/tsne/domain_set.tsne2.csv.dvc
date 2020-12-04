@@ -1,0 +1,10 @@
+cmd: python ../../../../../bgc_detection/similarity/dim_reduction_matrix.py  -i ../domain_set.pkl
+  -o domain_set.tsne2.csv --metric cosine
+deps:
+- md5: d19596e6d00437ea6abf90665136404a
+  path: ../domain_set.pkl
+md5: b7838851a565141f348f4037858f3f11
+outs:
+- cache: true
+  md5: 4efcfe8feacdc126f92e22f5fa652e30
+  path: domain_set.tsne2.csv

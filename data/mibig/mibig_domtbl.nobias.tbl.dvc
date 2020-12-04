@@ -1,0 +1,12 @@
+cmd: ../../bgc_detection/sub.sh hmmscan --nobias --domtblout mibig_domtbl.nobias.tbl
+  ../pfam/Pfam-A.hmm mibig_proteins.fa
+deps:
+- md5: 79a3328e4c95b13949a4489b19959fc5
+  path: ../pfam/Pfam-A.hmm
+- md5: 33fc8d95a453e52b60984c0556a72222
+  path: mibig_proteins.fa
+md5: 8b2ba99efdff022862e395a7ceb83fc1
+outs:
+- cache: true
+  md5: 291a7a991a2acc51ffbbd9cd55b7db79
+  path: mibig_domtbl.nobias.tbl

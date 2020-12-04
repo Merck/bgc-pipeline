@@ -1,0 +1,12 @@
+cmd: python ../../../../bgc_detection/run_prediction.py -m ../../../models/trained/hmm_discrete.bgc_blast.pickle
+  -o hmm_discrete.bgc_blast.csv -e 0.01 ../CF_labelled_contigs_domains.csv
+deps:
+- md5: 55b1ff59fe5958bfccea0f8d0f14eca8
+  path: ../../../models/trained/hmm_discrete.bgc_blast.pickle
+- md5: 1e941025645e1f81fa2390f427ea7e9a
+  path: ../CF_labelled_contigs_domains.csv
+md5: fa8f5f217c6c8e3d6f1ebb5b8590f371
+outs:
+- cache: true
+  md5: 13ba6d6763f5b669dfccba31114fdcdb
+  path: hmm_discrete.bgc_blast.csv
