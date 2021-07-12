@@ -13,6 +13,8 @@
 Reproduction and storage of data files is managed using [DVC](https://github.com/iterative/dvc) (development version `0.22.0`). 
 Each data file has a `.dvc` history file that contains the command that was used to generate the output along with md5 hashes of its dependencies.
 
+**Note!** The DVC files cannot be used to download the actual files, they are only here to document the commands used. If you want to retrain DeepBGC on new BGC data, please refer to the DeepBGC repository: https://github.com/Merck/deepbgc#train-deepbgc-on-your-own-data
+
 ## Installation
 
 - Install python 3, ideally using conda
